@@ -7,6 +7,7 @@
     <meta name="autor" content="Anton and Irina Bocharov">
     <meta name="vienport" content="width=device-width, initial-scale=1.0">
     <title>Моя первая страница</title>
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
     <h1>Моя первая страница</h1>
@@ -15,7 +16,6 @@
       <a href="Hello/about.html">об авторе</a>
     </p>
     <img src="./images/flower.jpg" alt="flowers">
-    <b>
       <ol>
         <li>Знакомство с Web</li>
         <ul>
@@ -44,7 +44,6 @@
           <li>Div-блоки.</li>
         </ul>
       </ol>
-    </b>
     <table border="1" width="100%">
       <thead>
       <tr>
@@ -92,7 +91,7 @@
     <form>
       <fieldset>
         <legend>My first form</legend>
-        <p>
+        <div>
           <label for="name">Name</label><br />
           <input id="name" type="text" name="name" placeholder="Name" /><br>
           <label for="email">Email</label><br />
@@ -100,28 +99,28 @@
           <label for="password">Password</label><br />
           <input id="password" type="password" name="Password"/><br>
           <label for="programminglevel">Your programming level</label><br />
-          <input id="programminglevel" type="range" name="programminglevel"/>
-        </p>
+          <input id="programminglevel" type="range" min="0" max="10" name="programminglevel"/>
+        </div>
         <p>
-          What does HTML stand for?<br>
+          What does HTML stand for?
         </p>
-        <input id="answers-1" type="checkbox" name="question1" value="1">
-        <label for="answers-1">Hyperlinks and Text Markup Language</label><br />
-        <input id="answers-2" type="checkbox" name="question1" value="2">
-        <label for="answers-2">Home Tool Markup Language</label><br />
-        <input id="answers-3" type="checkbox" name="question1" value="3">
-        <label for="answers-3">Hyper Text Marcup Language</label>
+        <input id="Hyperlinks" type="checkbox" name="question1" value="1">
+        <label for="Hyperlinks">Hyperlinks and Text Markup Language</label><br />
+        <input id="Hometool" type="checkbox" name="question1" value="2">
+        <label for="Hometool">Home Tool Markup Language</label><br />
+        <input id="Hypertext" type="checkbox" name="question1" value="3">
+        <label for="Hypertext">Hyper Text Marcup Language</label>
         <p>
           What does HTTP stand for?
         </p>
-        <input id="answer-1" type="radio" name="question" value="1">
-        <label for="answer-1">Hyper Text Translate Protokol</label><br />
-        <input id="answer-2" type="radio" name="question" value="2">
-        <label for="answer-2">Hyper Text Transmission Protocol</label><br />
-        <input id="answer-3" type="radio" name="question" value="3">
-        <label for="answer-3">Hyper Text Transfer Protocol</label><br />
+        <input id="Hlinksradio" type="radio" name="question" value="1">
+        <label for="Hlinksradio">Hyper Text Translate Protokol</label><br />
+        <input id="Htoolradio" type="radio" name="question" value="2">
+        <label for="Htoolradio">Hyper Text Transmission Protocol</label><br />
+        <input id="Htextradio" type="radio" name="question" value="3">
+        <label for="Htextradio">Hyper Text Transfer Protocol</label><br />
         <label for="comment">Comment</label><br>
-        <textarea id="comment" name="comment" placeholder="Comment"></textarea><br>
+        <textarea id="comment" name="comment" cols="22" placeholder="Comment"></textarea><br>
         <label for="select answer">What does HTML stand for?</label><br />
         <select name="answer" id="select answer">
           <option disabled selected>Your answer</option>
