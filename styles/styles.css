@@ -1,5 +1,4 @@
 @import url("./fonts.css");
-@import url("./all.min.css");
 
 * {
   margin: 0;
@@ -10,141 +9,26 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.trip {
-  min-height: 900px;
-  background-image: url(".././images/fon.jpg");
-  background-repeat: no-repeat;
-  padding: 51px 104px 120px 104px;
-}
-
-.trip__header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.trip__header-right {
-  display: flex;
-  flex-direction: column;
-}
-
-.right__under {
-  display: flex;
-}
-
-.under__href {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.under__href {
-  margin-right: 24px;
-  font-size: 24px;
-  line-height: 28px;
-  justify-content: space-around;
-}
-
-.under__logotip {
-  margin-left: 24px;
-  justify-content: space-around;
-  gap: 24px;
-}
-
-.under__logotip-night {
-  width: 30px;
-  height: 30px;
-  margin-right: 24px;
-}
-
-.under__logotip-account {
-  width: 40px;
-  height: 40px;
-}
-
-.under__line {
-  width: 50px;
-  background-color: #f5bd41;
-  border: 2px solid #f5bd41;
-}
-
-.trip__page {
-  margin-top: 202px;
-}
-
-.trip__page-header {
-  color: #ffffff;
-  width: 542px;
-  height: 118px;
-  font-weight: 500;
-  font-size: 50px;
-  margin-bottom: 100px;
-}
-
-.trip__page-underform {
-  width: 640px;
-  display: flex;
-  justify-content: space-between;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 21px;
-  margin-bottom: 24px;
-}
-
-.trip__page-form {
-  width: 1223px;
-  height: 64px;
-  display: flex;
-}
-
-.page__form-data {
-  width: 259px;
-}
-
-.page__form-button {
-  width: 192px;
-  height: 64px;
-  color: #ffffff;
-  border-radius: 8px;
-  background-color: #3077c6;
-  border-color: #3077c6;
-}
-
-.trip__page-apps {
-  padding: 120px 584px 0px 480px;
-  display: flex;
-  flex-direction: row;
-  gap: 18px;
-}
-
-.trip__page__apps-googleplay {
-  width: 135px;
-  height: 40px;
-}
-
-.trip__page__apps-appstore {
-  width: 118px;
-  height: 40px;
-}
-
-.quality {
+.container {
   margin-bottom: 120px;
   padding: 120px 104px 122px;
   width: 1520px;
 }
 
-.quality__header {
+.title-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.quality__header-text {
+.title {
   text-align: center;
   color: #383838;
   font-size: 40px;
   font-weight: 500;
 }
 
-.quality__header-line {
+.line {
   background-color: #f5bd41;
   border: 2px solid #f5bd41;
   width: 100px;
@@ -153,21 +37,21 @@ body {
   margin-top: 20px;
 }
 
-.quality__name {
+.row-quality {
   display: flex;
   margin-top: 80px;
   width: 1232px;
   height: 183px;
 }
 
-.quality__name-col {
+.quality-col {
   width: 25%;
   text-align: center;
   color: #383838;
   font-size: 24px;
 }
 
-.name__col-text {
+.quality-title {
   margin-top: 48px;
   font-weight: 400;
   line-height: 28px;
@@ -183,21 +67,133 @@ body {
   width: 1520px;
 }
 
-.footer__colon {
+.colon-foot {
   width: 33.3333%;
 }
 
-.footer__colontitul {
+.colontitul {
   margin-top: 64px;
   font-size: 14px;
 }
 
-.footer__colon-text {
+.text-foot {
   font-size: 20px;
   font-weight: 400;
   line-height: 47px;
 }
 
-.footer__colon__text-header {
+.text {
   font-weight: 500;
+}
+
+.trip-house {
+  height: 900px;
+  width: 1520px;
+  background-image: url(".././images/fon.jpg");
+  background-repeat: no-repeat;
+  padding: 51px 104px 120px 104px;
+}
+
+.header-trip {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 684px;
+  margin-bottom: 202px;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.under {
+  display: flex;
+}
+
+.href {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.fon-img {
+  width: 1520px;
+  height: 900px;
+}
+
+.line-trip {
+  width: 50px;
+}
+
+hr {
+  background-color: #f5bd41;
+  border: 2px solid #f5bd41;
+}
+
+.href {
+  margin-right: 24px;
+  font-size: 24px;
+  line-height: 28px;
+  justify-content: space-around;
+}
+
+.logotips {
+  margin-left: 24px;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.night {
+  width: 30px;
+  height: 30px;
+  margin-right: 24px;
+}
+
+.account {
+  width: 40px;
+  height: 40px;
+}
+
+.page-trip {
+  margin: 293px 104px 120px 104px;
+}
+
+.header-text {
+  color: #ffffff;
+  width: 542px;
+  height: 118px;
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.underform {
+  display: flex;
+  gap: 221px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 24px;
+}
+
+.label {
+  width: 1223px;
+  height: 64px;
+  display: flex;
+}
+
+button {
+  width: 192px;
+  height: 64px;
+  color: #ffffff;
+  border-radius: 8px;
+  background-color: #3077c6;
+  border-color: #3077c6;
+}
+
+.label-data {
+  width: 259px;
+}
+
+.apps {
+  padding: 120px 584px 0px 480px;
 }
