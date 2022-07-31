@@ -220,21 +220,14 @@ body {
   width: 100%;
 }
 
-@media only screen and (max-width: 360px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
-
 .quality-name__col {
   text-align: center;
 }
 
 .quality-name__svg {
   max-width: 100px;
-  width: 100%;
-  aspect-ratio: 1/1;
+  /* width: 100%;
+  aspect-ratio: 1/1;*/
   margin: 0 auto 48px;
 }
 
@@ -243,6 +236,45 @@ body {
   line-height: 28px;
   font-size: 24px;
   color: #383838;
+}
+
+@media only screen and (max-width: 360px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .quality {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+
+  .quality-header__text {
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+
+  .quality-header__line {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    margin-bottom: 0;
+  }
+
+  .quality-name__col {
+    margin-top: 32px;
+  }
+
+  .quality-name__svg {
+    margin: 0 auto 16px;
+    width: 70px;
+  }
+
+  .quality-name__text {
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+  }
 }
 
 .footer {
@@ -275,6 +307,54 @@ body {
   width: 33.3333%;
 }
 
+/* For desktop: */
+.footer__colon-1 {
+  width: 8.33%;
+}
+
+.footer__colon-2 {
+  width: 16.66%;
+}
+
+.footer__colon-3 {
+  width: 25%;
+}
+
+.footer__colon-4 {
+  width: 33.33%;
+}
+
+.footer__colon-5 {
+  width: 41.66%;
+}
+
+.footer__colon-6 {
+  width: 50%;
+}
+
+.footer__colon-7 {
+  width: 58.33%;
+}
+
+.footer__colon-8 {
+  width: 66.66%;
+}
+
+.footer__colon-9 {
+  width: 75%;
+}
+
+.footer__colon-10 {
+  width: 83.33%;
+}
+
+.footer__colon-11 {
+  width: 91.66%;
+}
+.footer__colon-12 {
+  width: 100%;
+}
+
 .footer-colon__text {
   font-size: 20px;
   font-weight: 400;
@@ -287,4 +367,32 @@ body {
 
 .footer__colontitul {
   font-size: 14px;
+}
+
+@media only screen and (max-width: 360px) {
+  /* For mobile phones: */
+  .footer__flex {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer__flex-colons {
+    margin-bottom: 32px;
+  }
+
+  .footer-colon__text {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .footer-colon__text__header {
+    font-size: 15px;
+    text-decoration: underline;
+  }
+
+  .footer__colontitul {
+    font-size: 12px;
+  }
 }
