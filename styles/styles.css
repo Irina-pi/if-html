@@ -10,23 +10,26 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/*.trip-background {
+.trip__background {
   background-image: url("../images/castelmezzano-1979546 1.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-position: center;
 }
 
-.trip {
-  padding: 51px 104px 120px 104px;
-  width: 1440px;
+.trip__contanier {
+  max-width: 1264px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 .trip__header {
+  padding-top: 51px;
+  padding-bottom: 202px;
   display: flex;
   justify-content: space-between;
 }
 
-.trip__header-right {
+.trip-header__right {
   display: flex;
   flex-direction: column;
 }
@@ -50,13 +53,13 @@ body {
   gap: 24px;
 }
 
-.under__logotip-night {
+.under-logotip__night {
   width: 30px;
   height: 30px;
   margin-right: 24px;
 }
 
-.under__logotip-account {
+.under-logotip__account {
   width: 40px;
   height: 40px;
 }
@@ -68,19 +71,18 @@ body {
 }
 
 .trip__page {
-  margin-top: 202px;
+  padding-bottom: 120px;
 }
 
-.trip__page-header {
+.trip-page__header {
   color: #ffffff;
-  width: 542px;
-  height: 118px;
   font-weight: 500;
   font-size: 50px;
   margin-bottom: 100px;
 }
 
-.trip__page-underform {
+.trip-page__underform {
+  padding-left: 24px;
   display: flex;
   gap: 221px;
   color: #ffffff;
@@ -89,17 +91,24 @@ body {
   margin-bottom: 24px;
 }
 
-.trip__page-form {
-  width: 1223px;
-  height: 64px;
+.trip-page__form {
   display: flex;
+  padding-bottom: 120px;
 }
 
-.page__form-data {
+.page-form__city {
+  width: 467px;
+}
+
+.page-form__data {
   width: 259px;
 }
 
-.page__form-button {
+.page-form__nomer {
+  width: 305px;
+}
+
+.page-form__button {
   width: 192px;
   height: 64px;
   color: #ffffff;
@@ -108,22 +117,22 @@ body {
   border-color: #3077c6;
 }
 
-.trip__page-apps {
-  padding: 120px 584px 0px 480px;
+.trip-page__apps {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 18px;
 }
 
-.trip__page__apps-googleplay {
+.trip-page__apps__googleplay {
   width: 135px;
   height: 40px;
 }
 
-.trip__page__apps-appstore {
+.trip-page__apps__appstore {
   width: 118px;
   height: 40px;
-}*/
+}
 
 .container {
   max-width: 1264px;
@@ -243,12 +252,13 @@ body {
 .footer__container {
   max-width: 1264px;
   padding: 0 16px;
-  margin: 0 88px;
+  margin: 0 auto;
 }
 
 .footer__flex {
   padding-top: 120px;
   padding-bottom: 120px;
+  margin-left: -16px;
   display: flex;
   flex-direction: column;
   color: #ffffff;
@@ -258,7 +268,6 @@ body {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
-  /*justify-content: space-between;*/
   margin-bottom: 64px;
 }
 
