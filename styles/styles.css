@@ -93,7 +93,17 @@ body {
 
 .trip-page__form {
   display: flex;
-  padding-bottom: 120px;
+  margin-right: 9px;
+  margin-bottom: 120px;
+  background: #FFFFFF;
+  border: 3px solid #F3F3F4;
+  border-right: #3077c6;
+  border-radius: 8px;
+}
+
+.border-form__grey {
+  display: flex;
+
 }
 
 .page-form__city {
@@ -102,6 +112,8 @@ body {
 
 .page-form__data {
   width: 259px;
+  border: 3px solid #F5BD41;
+  border-radius: 8px;
 }
 
 .page-form__nomer {
@@ -112,9 +124,9 @@ body {
   width: 192px;
   height: 64px;
   color: #ffffff;
+  border: 6px solid #3077c6;
   border-radius: 8px;
   background-color: #3077c6;
-  border-color: #3077c6;
 }
 
 .trip-page__apps {
