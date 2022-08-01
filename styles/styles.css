@@ -256,9 +256,7 @@ body {
   }
 
   .quality-header__line {
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    margin-bottom: 0;
+    display: none;
   }
 
   .quality-name__col {
@@ -285,6 +283,10 @@ body {
   max-width: 1264px;
   padding: 0 16px;
   margin: 0 auto;
+}
+
+.footer__header {
+  display: none;
 }
 
 .footer__flex {
@@ -363,6 +365,8 @@ body {
 
 .footer-colon__text__header {
   font-weight: 500;
+  font-size: 20px;
+  line-height: 47px;
 }
 
 .footer__colontitul {
@@ -371,6 +375,16 @@ body {
 
 @media only screen and (max-width: 360px) {
   /* For mobile phones: */
+  .footer__container {
+    padding-top: 40px;
+  }
+
+  .footer__header {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .footer__flex {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -385,6 +399,7 @@ body {
   .footer-colon__text {
     font-size: 10px;
     line-height: 11px;
+    display: none;
   }
 
   .footer-colon__text__header {
