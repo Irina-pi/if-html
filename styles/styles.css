@@ -27,7 +27,7 @@ input {
 .trip__background {
   background-image: url("../images/castelmezzano-1979546 1.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 .trip__contanier {
@@ -115,11 +115,12 @@ input {
 }
 
 .trip-page__form {
+  max-width: 1223px;
   display: flex;
   margin-right: 9px;
   margin-bottom: 120px;
-  background: #FFFFFF;
-  border: 3px solid #F3F3F4;
+  background: #ffffff;
+  border: 3px solid #f3f3f4;
   border-right: #3077c6;
   border-radius: 8px;
 }
@@ -154,7 +155,7 @@ input {
   font-size: 18px;
   color: #383838;
   text-align: center;
-  border: 3px solid #F5BD41;
+  border: 3px solid #f5bd41;
   border-radius: 8px;
 }
 
@@ -197,6 +198,10 @@ input {
   /* For mobile phones: */
   .phone {
     display: block;
+  }
+
+  .trip__background {
+    background-position: right;
   }
 
   .trip__header {
@@ -271,8 +276,8 @@ input {
     justify-content: center;
     align-items: center;
     margin-bottom: 32px;
-    background: #F5BD41;
-    border: 1px solid #F5BD41;
+    background: #f5bd41;
+    border: 1px solid #f5bd41;
     border-radius: 0;
   }
 
@@ -281,7 +286,7 @@ input {
     display: flex;
     flex-direction: column;
     row-gap: 8px;
-    border-bottom: 8px solid #F5BD41;
+    border-bottom: 8px solid #f5bd41;
   }
 
   .form__city-desktop {
@@ -383,7 +388,7 @@ input {
   .page-form__button {
     width: 312px;
     height: 48px;
-    border: 1px solid #F5BD41;
+    border: 1px solid #f5bd41;
     border-radius: 4px;
     font-size: 19px;
   }
