@@ -10,6 +10,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  max-width: 1264px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+input {
+  border: none;
+}
+
+.phone {
+  display: none;
+}
+
 .trip__background {
   background-image: url("../images/castelmezzano-1979546 1.jpg");
   background-repeat: no-repeat;
@@ -64,6 +78,12 @@ body {
   height: 40px;
 }
 
+.under-logotip__menu {
+  width: 24px;
+  height: 16px;
+  display: none;
+}
+
 .under__line {
   width: 50px;
   background-color: #f5bd41;
@@ -91,6 +111,12 @@ body {
   margin-bottom: 24px;
 }
 
+
+
+
+
+
+
 .trip-page__form {
   display: flex;
   margin-right: 9px;
@@ -101,23 +127,47 @@ body {
   border-radius: 8px;
 }
 
-.border-form__grey {
+.form__filters {
   display: flex;
-
 }
 
-.page-form__city {
+.form__city-desktop {
   width: 467px;
+  font-weight: 400px;
+  font-size: 18px;
+  color: #383838;
+  padding-left: 24px;
+}
+
+.page-form__city-phone-img {
+  display: none;
+}
+
+.search-city-phone {
+  display: none;
+}
+
+.form__city-phone {
+  display: none;
 }
 
 .page-form__data {
   width: 259px;
+  font-weight: 400px;
+  font-size: 18px;
+  color: #383838;
+  text-align: center;
   border: 3px solid #F5BD41;
   border-radius: 8px;
 }
 
+.page-form__nomer-phone {
+  display: none;
+}
+
 .page-form__nomer {
   width: 305px;
+  text-align: center;
 }
 
 .page-form__button {
@@ -146,11 +196,196 @@ body {
   height: 40px;
 }
 
-.container {
-  max-width: 1264px;
-  padding: 0 16px;
-  margin: 0 auto;
+@media only screen and (max-width: 360px) {
+  /* For mobile phones: */
+  .phone {
+    display: block;
+  }
+
+  .trip__header {
+    padding-top: 12px;
+    padding-bottom: 52px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .trip-header__right {
+    display: flex;
+  }
+
+  .under__href {
+    display: none;
+  }
+
+  .under__logotip {
+    margin-left: 16px;
+    justify-content: space-around;
+    gap: 16px;
+  }
+
+  .under-logotip__night {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+  }
+
+  .under-logotip__account {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+
+  .under-logotip__menu {
+    width: 24px;
+    height: 16px;
+    display: block;
+  }
+
+  .under__line {
+    display: none;
+  }
+
+  .trip__page {
+    padding-bottom: 40px;
+  }
+
+  .trip-page__header {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 31px;
+  }
+
+  .trip-page__underform {
+    display: none;
+  }
+
+  .trip-page__form {
+    width: 328px;
+    height: 232px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    background: #F5BD41;
+    border: 1px solid #F5BD41;
+    border-radius: 0;
+  }
+
+  .form__filters {
+    width: 312px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    border-bottom: 8px solid #F5BD41;
+  }
+
+  .form__city-desktop {
+    display: none;
+  }
+
+  .search-city-phone {
+    width: 312px;
+    height: 48px;
+    display: flex;
+  }
+
+  .page-form__city-phone-img {
+    display: block;
+    width: 16px;
+  }
+
+  .form__city-phone {
+    display: block;
+    width: 306px;
+    height: 48px;
+    padding-left: 8px;
+    font-weight: 500px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #383838;
+  }
+
+  .page-form__data {
+    display: none;
+  }
+
+  .form-data-phone {
+    width: 312px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .check {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 152px;
+    padding-left: 8px;
+    padding-top: 6px;
+    color: #383838;
+  }
+
+  .check-text {
+    font-weight: 400px;
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+
+  .data-phone {
+    height: 18px;
+    font-weight: 500px;
+    font-size: 15px;
+  }
+
+  .page-form__nomer {
+    display: none;
+  }
+
+  .page-form__nomer-phone {
+    width: 312px;
+    height: 48px;
+    display: flex;
+    background-color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .form__nomer-filter {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding-left: 8px;
+  }
+
+  .text-filter {
+    font-weight: 400px;
+    font-size: 12px;
+  }
+
+  .input-filter {
+    font-weight: 500px;
+    font-size: 15px;
+  }
+
+
+  .page-form__button {
+    width: 312px;
+    height: 48px;
+    color: #ffffff;
+    background-color: #3077c6;
+    border: 1px solid #F5BD41;
+    border-radius: 8px;
+    font-weight: 500px;
+    font-size: 19px;
+  }
 }
+
+
+
+
 
 .quality {
   padding-top: 120px;
