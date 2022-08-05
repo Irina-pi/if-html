@@ -43,6 +43,11 @@ input {
   justify-content: space-between;
 }
 
+.trip-header__left-svg {
+  width: 205px;
+  height: 40px;
+}
+
 .trip-header__right {
   display: flex;
   flex-direction: column;
@@ -79,8 +84,6 @@ input {
 }
 
 .under-logotip__menu {
-  width: 24px;
-  height: 16px;
   display: none;
 }
 
@@ -111,12 +114,6 @@ input {
   margin-bottom: 24px;
 }
 
-
-
-
-
-
-
 .trip-page__form {
   display: flex;
   margin-right: 9px;
@@ -133,7 +130,7 @@ input {
 
 .form__city-desktop {
   width: 467px;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 18px;
   color: #383838;
   padding-left: 24px;
@@ -153,7 +150,7 @@ input {
 
 .page-form__data {
   width: 259px;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 18px;
   color: #383838;
   text-align: center;
@@ -206,7 +203,12 @@ input {
     padding-top: 12px;
     padding-bottom: 52px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  .trip-header__left-svg {
+    width: 122px;
+    height: 24px;
   }
 
   .trip-header__right {
@@ -218,27 +220,29 @@ input {
   }
 
   .under__logotip {
-    margin-left: 16px;
-    justify-content: space-around;
+    display: flex;
     gap: 16px;
+    justify-content: center;
+    margin-left: 110px;
   }
 
   .under-logotip__night {
     width: 16px;
     height: 16px;
-    margin-right: 16px;
+    margin-right: 0;
+    margin-top: 4px;
   }
 
   .under-logotip__account {
     width: 24px;
     height: 24px;
-    margin-right: 16px;
   }
 
   .under-logotip__menu {
     width: 24px;
     height: 16px;
     display: block;
+    margin-top: 4px;
   }
 
   .under__line {
@@ -288,6 +292,8 @@ input {
     width: 312px;
     height: 48px;
     display: flex;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
   }
 
   .page-form__city-phone-img {
@@ -300,7 +306,7 @@ input {
     width: 306px;
     height: 48px;
     padding-left: 8px;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 15px;
     line-height: 18px;
     color: #383838;
@@ -326,17 +332,19 @@ input {
     padding-left: 8px;
     padding-top: 6px;
     color: #383838;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
   }
 
   .check-text {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 12px;
     padding-bottom: 4px;
   }
 
   .data-phone {
     height: 18px;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 15px;
   }
 
@@ -351,6 +359,8 @@ input {
     background-color: white;
     padding-top: 6px;
     padding-bottom: 6px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
   }
 
   .form__nomer-filter {
@@ -361,31 +371,23 @@ input {
   }
 
   .text-filter {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 12px;
   }
 
   .input-filter {
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 15px;
   }
-
 
   .page-form__button {
     width: 312px;
     height: 48px;
-    color: #ffffff;
-    background-color: #3077c6;
     border: 1px solid #F5BD41;
-    border-radius: 8px;
-    font-weight: 500px;
+    border-radius: 4px;
     font-size: 19px;
   }
 }
-
-
-
-
 
 .quality {
   padding-top: 120px;
