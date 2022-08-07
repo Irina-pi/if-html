@@ -28,6 +28,7 @@ input {
   background-image: url("../images/castelmezzano-1979546 1.jpg");
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
 }
 
 .trip__contanier {
@@ -166,6 +167,8 @@ input {
 .page-form__nomer {
   width: 305px;
   text-align: center;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .page-form__button {
@@ -175,6 +178,8 @@ input {
   border: 6px solid #3077c6;
   border-radius: 8px;
   background-color: #3077c6;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 .trip-page__apps {
@@ -529,6 +534,157 @@ input {
   }
 }
 
+.block-three {
+  display: grid;
+  grid-template: auto / repeat(4, 296px);
+  margin: 120px 0;
+  column-gap: 16px;
+}
+
+.header__block-three {
+  grid-column: 2 / span 2;
+  grid-row: 1 / 2;
+  justify-self: center;
+  padding-bottom: 105px;
+  font-weight: 500;
+  font-size: 40px;
+  color: #383838;
+}
+
+.img-block-three {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 296px;
+  height: 296px;
+}
+
+.caption {
+  font-weight: 400;
+  font-size: 24px;
+  color: #3077C6;
+  padding: 24px 0;
+}
+
+.location {
+  font-weight: 400;
+  font-size: 24px;
+  color: #BFBFBF;
+}
+
+.hotel {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-image: url("../images/Rectangle 48.png");
+}
+
+.caption-hotel {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.location-hotel {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.appartment {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-image: url("../images/Rectangle 49.png");
+}
+
+.caption-appartment {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.location-appartment {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.villa {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background-image: url("../images/Rectangle 50.png");
+}
+
+.caption-villa {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.location-villa {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
+
+.hostel {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  background-image: url("../images/Rectangle 51.png");
+}
+
+.caption-hostel {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+}
+
+.location-hostel {
+  grid-column: 4 / 5;
+  grid-row: 4 / 5;
+}
+
+.circle {
+  background: #F3F3F4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: -1px 4px 4px 1px rgb(4 4 4 / 25%);
+  position: relative;
+  top: 40%;
+  left: 95%;
+}
+
+.arrow {
+  position: relative;
+  top: 25%;
+  left: 40%;
+}
+
+@media only screen and (max-width: 360px) {
+  /* For mobile phones: */
+  .desktop {
+    display: none;
+  }
+
+  .block-three {
+    grid-template: auto / repeat(2, 156px);
+    margin: 40px 0;
+  }
+
+  .header__block-three {
+    grid-column: 1 / span 2;
+    padding-bottom: 32px;
+    font-size: 28px;
+  }
+
+  .img-block-three {
+    width: 156px;
+    height: 155px;
+  }
+
+  .caption {
+    font-size: 12px;
+    padding: 8px 0 4px;
+  }
+
+  .location {
+    font-size: 12px;
+  }
+}
+
+/*Block 6*/
 .footer {
   background-color: #10367c;
 }
