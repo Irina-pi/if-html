@@ -399,145 +399,273 @@ input {
   }
 }
 
-.quality {
-  padding-top: 120px;
-  padding-bottom: 120px;
+
+
+
+
+
+.block-two {
+  display: grid;
+  grid-template: auto / repeat(4, 296px);
+  margin: 120px 0;
+  column-gap: 16px;
 }
 
-.quality-header {
-  display: flex;
-  flex-direction: column;
-}
-
-.quality-header__text {
-  color: #383838;
-  font-size: 40px;
+.header__block-two {
+  grid-column: 2 / span 2;
+  grid-row: 1 / 2;
+  justify-self: center;
+  padding-bottom: 80px;
+  font-style: normal;
   font-weight: 500;
-  margin-bottom: 20px;
-  text-align: center;
+  font-size: 40px;
+  color: #383838;
 }
 
-.quality-header__line {
+.block-two__line {
   background-color: #f5bd41;
   border: 2px solid #f5bd41;
   width: 100px;
   height: 1px;
-  align-self: center;
-  margin-bottom: 80px;
+  margin-top: 20px;
+  position: relative;
+  left: 33%;
 }
 
-.quality-name {
-  display: flex;
-  flex-wrap: wrap;
+.img-block-two {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  justify-self: center;
 }
 
-/* For desktop: */
-.col-1 {
-  width: 8.33%;
-}
-
-.col-2 {
-  width: 16.66%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.33%;
-}
-
-.col-5 {
-  width: 41.66%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.33%;
-}
-
-.col-8 {
-  width: 66.66%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.33%;
-}
-
-.col-11 {
-  width: 91.66%;
-}
-.col-12 {
-  width: 100%;
-}
-
-.quality-name__col {
-  text-align: center;
-}
-
-.quality-name__svg {
-  max-width: 100px;
-  /* width: 100%;
-  aspect-ratio: 1/1;*/
-  margin: 0 auto 48px;
-}
-
-.quality-name__text {
+.caption__block-two {
   font-weight: 400;
-  line-height: 28px;
   font-size: 24px;
   color: #383838;
+  padding-top: 48px;
+  justify-self: center;
+  padding-bottom: 2px;
+}
+
+.support {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.caption-support {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.communicate {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.caption-communicate {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.book-online {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.caption-book-online {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.reviews {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+.caption-reviews {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
 }
 
 @media only screen and (max-width: 360px) {
   /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
+  .block-two {
+    grid-template: auto / repeat(2, 156px);
+    margin: 40px 0;
   }
 
-  .quality {
-    padding-top: 0;
-    padding-bottom: 40px;
-  }
-
-  .quality-header__text {
+  .header__block-three {
+    grid-column: 1 / span 2;
+    padding-bottom: 32px;
     font-size: 28px;
-    margin-top: 24px;
-    margin-bottom: 0;
   }
 
-  .quality-header__line {
-    display: none;
+  .img-block-three {
+    width: 156px;
+    height: 155px;
   }
 
-  .quality-name__col {
-    margin-top: 32px;
+  .caption__block-three {
+    font-size: 12px;
+    padding: 8px 0 4px;
   }
 
-  .quality-name__svg {
-    margin: 0 auto 16px;
-    width: 70px;
+  .location__block-three {
+    font-size: 12px;
   }
+}
+/*.quality {*/
+/*  padding-top: 120px;*/
+/*  padding-bottom: 120px;*/
+/*}*/
 
-  .quality-name__text {
-    font-size: 15px;
-    line-height: 1.2;
-    text-align: center;
-  }
+/*.quality-header {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*}*/
+
+/*.quality-header__text {*/
+/*  color: #383838;*/
+/*  font-size: 40px;*/
+/*  font-weight: 500;*/
+/*  margin-bottom: 20px;*/
+/*  text-align: center;*/
+/*}*/
+
+/*.quality-header__line {*/
+/*  background-color: #f5bd41;*/
+/*  border: 2px solid #f5bd41;*/
+/*  width: 100px;*/
+/*  height: 1px;*/
+/*  align-self: center;*/
+/*  margin-bottom: 80px;*/
+/*}*/
+
+/*.quality-name {*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*}*/
+
+/*!* For desktop: *!*/
+/*.col-1 {*/
+/*  width: 8.33%;*/
+/*}*/
+
+/*.col-2 {*/
+/*  width: 16.66%;*/
+/*}*/
+
+/*.col-3 {*/
+/*  width: 25%;*/
+/*}*/
+
+/*.col-4 {*/
+/*  width: 33.33%;*/
+/*}*/
+
+/*.col-5 {*/
+/*  width: 41.66%;*/
+/*}*/
+
+/*.col-6 {*/
+/*  width: 50%;*/
+/*}*/
+
+/*.col-7 {*/
+/*  width: 58.33%;*/
+/*}*/
+
+/*.col-8 {*/
+/*  width: 66.66%;*/
+/*}*/
+
+/*.col-9 {*/
+/*  width: 75%;*/
+/*}*/
+
+/*.col-10 {*/
+/*  width: 83.33%;*/
+/*}*/
+
+/*.col-11 {*/
+/*  width: 91.66%;*/
+/*}*/
+/*.col-12 {*/
+/*  width: 100%;*/
+/*}*/
+
+/*.quality-name__col {*/
+/*  text-align: center;*/
+/*}*/
+
+/*.quality-name__svg {*/
+/*  max-width: 100px;*/
+/*  !* width: 100%;*/
+/*  aspect-ratio: 1/1;*!*/
+/*  margin: 0 auto 48px;*/
+/*}*/
+
+/*.quality-name__text {*/
+/*  font-weight: 400;*/
+/*  line-height: 28px;*/
+/*  font-size: 24px;*/
+/*  color: #383838;*/
+/*}*/
+
+/*@media only screen and (max-width: 360px) {*/
+/*  !* For mobile phones: *!*/
+/*  [class*="col-"] {*/
+/*    width: 100%;*/
+/*  }*/
+
+/*  .quality {*/
+/*    padding-top: 0;*/
+/*    padding-bottom: 40px;*/
+/*  }*/
+
+/*  .quality-header__text {*/
+/*    font-size: 28px;*/
+/*    margin-top: 24px;*/
+/*    margin-bottom: 0;*/
+/*  }*/
+
+/*  .quality-header__line {*/
+/*    display: none;*/
+/*  }*/
+
+/*  .quality-name__col {*/
+/*    margin-top: 32px;*/
+/*  }*/
+
+/*  .quality-name__svg {*/
+/*    margin: 0 auto 16px;*/
+/*    width: 70px;*/
+/*  }*/
+
+/*  .quality-name__text {*/
+/*    font-size: 15px;*/
+/*    line-height: 1.2;*/
+/*    text-align: center;*/
+/*  }*/
+/*}*/
+
+
+
+
+
+
+
+
+.background__block-three {
+  background-color: #EAF0F9;
 }
 
 .block-three {
   display: grid;
   grid-template: auto / repeat(4, 296px);
-  margin: 120px 0;
+  padding: 120px 0;
   column-gap: 16px;
 }
 
@@ -558,14 +686,14 @@ input {
   height: 296px;
 }
 
-.caption {
+.caption__block-three {
   font-weight: 400;
   font-size: 24px;
   color: #3077C6;
   padding: 24px 0;
 }
 
-.location {
+.location__block-three {
   font-weight: 400;
   font-size: 24px;
   color: #BFBFBF;
@@ -674,12 +802,12 @@ input {
     height: 155px;
   }
 
-  .caption {
+  .caption__block-three {
     font-size: 12px;
     padding: 8px 0 4px;
   }
 
-  .location {
+  .location__block-three {
     font-size: 12px;
   }
 }
