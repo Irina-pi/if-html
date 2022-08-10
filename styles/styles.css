@@ -66,6 +66,18 @@ input {
   justify-content: space-around;
   color: #ffffff;
   text-decoration: none;
+  position: relative;
+}
+
+.under__href:hover::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 91%;
+  background-color: #f5bd41;
+  position: absolute;
+  left: 9%;
+  margin-top: 12px;
 }
 
 .under__logotip {
