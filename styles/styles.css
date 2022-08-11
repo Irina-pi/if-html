@@ -25,41 +25,30 @@ input {
 }
 
 /*Block 1*/
-.trip__background {
+.block-one__background {
   background-image: url("../images/castelmezzano-1979546 1.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 }
 
-.trip__contanier {
-  max-width: 1264px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
-.trip__header {
+.block-one__header {
   padding-top: 51px;
   padding-bottom: 202px;
   display: flex;
   justify-content: space-between;
 }
 
-.trip-header__left-svg {
+.block-one__header--left--svg {
   width: 205px;
   height: 40px;
 }
 
-.trip-header__right {
-  display: flex;
-  flex-direction: column;
-}
-
-.right__under {
+.block-one__header--right {
   display: flex;
 }
 
-.under__href {
+.block-one__header--right--href {
   margin-right: 24px;
   font-size: 24px;
   line-height: 28px;
@@ -69,7 +58,7 @@ input {
   position: relative;
 }
 
-.under__href:hover::after {
+.block-one__header--right--href:hover::after {
   display: block;
   content: "";
   height: 2px;
@@ -80,45 +69,39 @@ input {
   margin-top: 12px;
 }
 
-.under__logotip {
+.block-one__header--right--logotip {
   margin-left: 24px;
   justify-content: space-around;
   gap: 24px;
 }
 
-.under-logotip__night {
+.block-one__header--right--logotip--night {
   width: 30px;
   height: 30px;
   margin-right: 24px;
 }
 
-.under-logotip__account {
+.block-one__header--right--logotip--account {
   width: 40px;
   height: 40px;
 }
 
-.under-logotip__menu {
+.block-one__header--right--logotip--menu {
   display: none;
 }
 
-.under__line {
-  width: 50px;
-  background-color: #f5bd41;
-  border: 2px solid #f5bd41;
-}
-
-.trip__page {
+.block-one__page {
   padding-bottom: 120px;
 }
 
-.trip-page__header {
+.block-one__page--header {
   color: #ffffff;
   font-weight: 500;
   font-size: 50px;
   margin-bottom: 100px;
 }
 
-.trip-page__underform {
+.block-one__page--underform {
   padding-left: 24px;
   display: flex;
   gap: 221px;
@@ -128,7 +111,7 @@ input {
   margin-bottom: 24px;
 }
 
-.trip-page__form {
+.block-one__page--form {
   max-width: 1223px;
   display: flex;
   margin-right: 9px;
@@ -139,11 +122,11 @@ input {
   border-radius: 8px;
 }
 
-.form__filters {
+.block-one__page--form--filters {
   display: flex;
 }
 
-.form__city-desktop {
+.block-one__page--input--city-desktop {
   width: 467px;
   font-weight: 400;
   font-size: 18px;
@@ -151,19 +134,7 @@ input {
   padding-left: 24px;
 }
 
-.page-form__city-phone-img {
-  display: none;
-}
-
-.search-city-phone {
-  display: none;
-}
-
-.form__city-phone {
-  display: none;
-}
-
-.page-form__data {
+.block-one__page--input--data-desktop {
   width: 259px;
   font-weight: 400;
   font-size: 18px;
@@ -173,18 +144,14 @@ input {
   border-radius: 8px;
 }
 
-.page-form__nomer-phone {
-  display: none;
-}
-
-.page-form__nomer {
+.block-one__page--input--nomer-desktop {
   width: 305px;
   text-align: center;
   font-weight: 400;
   font-size: 18px;
 }
 
-.page-form__button {
+.block-one__page--form--button {
   width: 192px;
   height: 64px;
   color: #ffffff;
@@ -195,19 +162,19 @@ input {
   font-size: 24px;
 }
 
-.trip-page__apps {
+.block-one__page--apps {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 18px;
 }
 
-.trip-page__apps__googleplay {
+.block-one__page--apps--googleplay {
   width: 135px;
   height: 40px;
 }
 
-.trip-page__apps__appstore {
+.block-one__page--apps--appstore {
   width: 118px;
   height: 40px;
 }
@@ -218,76 +185,76 @@ input {
     display: block;
   }
 
-  .trip__background {
+  .desktop {
+    display: none;
+  }
+
+  .block-one__background {
     background-position: right;
   }
 
-  .trip__header {
+  .block-one__header {
     padding-top: 12px;
     padding-bottom: 52px;
     display: flex;
     justify-content: center;
   }
 
-  .trip-header__left-svg {
+  .block-one__header--left--svg {
     width: 122px;
     height: 24px;
   }
 
-  .trip-header__right {
+  .block-one__header--right {
     display: flex;
   }
 
-  .under__href {
+  .block-one__header--right--href {
     display: none;
   }
 
-  .under__logotip {
+  .block-one__header--right--logotip {
     display: flex;
     gap: 16px;
     justify-content: center;
     margin-left: 110px;
   }
 
-  .under-logotip__night {
+  .block-one__header--right--logotip--night {
     width: 16px;
     height: 16px;
     margin-right: 0;
     margin-top: 4px;
   }
 
-  .under-logotip__account {
+  .block-one__header--right--logotip--account {
     width: 24px;
     height: 24px;
   }
 
-  .under-logotip__menu {
+  .block-one__header--right--logotip--menu {
     width: 24px;
     height: 16px;
     display: block;
     margin-top: 4px;
   }
 
-  .under__line {
-    display: none;
-  }
-
-  .trip__page {
+  .block-one__page {
     padding-bottom: 40px;
   }
 
-  .trip-page__header {
+  .block-one__page--header {
     color: #ffffff;
     font-weight: 500;
     font-size: 30px;
     margin-bottom: 31px;
   }
 
-  .trip-page__underform {
+  .block-one__page--underform {
     display: none;
   }
 
-  .trip-page__form {
+  .block-one__page--form {
     width: 328px;
     height: 232px;
     flex-direction: column;
@@ -299,7 +266,7 @@ input {
     border-radius: 0;
   }
 
-  .form__filters {
+  .block-one__page--form--filters {
     width: 312px;
     display: flex;
     flex-direction: column;
@@ -307,11 +274,7 @@ input {
     border-bottom: 8px solid #f5bd41;
   }
 
-  .form__city-desktop {
-    display: none;
-  }
-
-  .search-city-phone {
+  .block-one__page--form--city-phone {
     width: 312px;
     height: 48px;
     display: flex;
@@ -319,12 +282,12 @@ input {
     border-radius: 4px;
   }
 
-  .page-form__city-phone-img {
+  .search-img {
     display: block;
     width: 16px;
   }
 
-  .form__city-phone {
+  .block-one__page--input--city-phone {
     display: block;
     width: 306px;
     height: 48px;
@@ -335,11 +298,7 @@ input {
     color: #383838;
   }
 
-  .page-form__data {
-    display: none;
-  }
-
-  .form-data-phone {
+  .block-one__page--form--data-phone {
     width: 312px;
     height: 48px;
     display: flex;
@@ -347,7 +306,7 @@ input {
     gap: 8px;
   }
 
-  .check {
+  .block-one__page--form--data--check {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -359,23 +318,19 @@ input {
     border-radius: 4px;
   }
 
-  .check-text {
+  .block-one__page--form--data--check-text {
     font-weight: 400;
     font-size: 12px;
     padding-bottom: 4px;
   }
 
-  .data-phone {
+  .block-one__page--input--data-phone {
     height: 18px;
     font-weight: 500;
     font-size: 15px;
   }
 
-  .page-form__nomer {
-    display: none;
-  }
-
-  .page-form__nomer-phone {
+  .block-one__page--form--nomer-phone {
     width: 312px;
     height: 48px;
     display: flex;
@@ -386,24 +341,24 @@ input {
     border-radius: 4px;
   }
 
-  .form__nomer-filter {
+  .block-one__page--form--nomer--filter {
     display: flex;
     flex-direction: column;
     width: 33%;
     padding-left: 8px;
   }
 
-  .text-filter {
+  .block-one__page--form--nomer--filter-text {
     font-weight: 400;
     font-size: 12px;
   }
 
-  .input-filter {
+  .block-one__page--form--nomer--filter-input {
     font-weight: 500;
     font-size: 15px;
   }
 
-  .page-form__button {
+  .block-one__page--form--button {
     width: 312px;
     height: 48px;
     border: 1px solid #f5bd41;
@@ -589,9 +544,9 @@ input {
   }
 }
 
-  /*for Block 3 */
+/*for Block 3 */
 .block-three__background {
-  background-color: #EAF0F9;
+  background-color: #eaf0f9;
 }
 
 .block-three {
@@ -621,14 +576,14 @@ input {
 .block-three__caption {
   font-weight: 400;
   font-size: 24px;
-  color: #3077C6;
+  color: #3077c6;
   padding: 24px 0;
 }
 
 .block-three__location {
   font-weight: 400;
   font-size: 24px;
-  color: #BFBFBF;
+  color: #bfbfbf;
 }
 
 .block-three__img--hotel {
@@ -696,7 +651,7 @@ input {
 }
 
 .circle {
-  background: #F3F3F4;
+  background: #f3f3f4;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -745,21 +700,15 @@ input {
 }
 
 /*Block 6*/
-.footer {
+.block-six {
   background-color: #10367c;
 }
 
-.footer__container {
-  max-width: 1264px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
-.footer__header {
+.block-six__header {
   display: none;
 }
 
-.footer__flex {
+.block-six__flex {
   padding-top: 120px;
   padding-bottom: 120px;
   margin-left: -16px;
@@ -768,116 +717,116 @@ input {
   color: #ffffff;
 }
 
-.footer__flex-colons {
+.block-six__flex--colons {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   margin-bottom: 64px;
 }
 
-.footer__colon {
+.block-six__flex--colons--colon {
   width: 33.3333%;
 }
 
 /* For desktop: */
-.footer__colon-1 {
+.block-six__flex--colons--colon-1 {
   width: 8.33%;
 }
 
-.footer__colon-2 {
+.block-six__flex--colons--colon-2 {
   width: 16.66%;
 }
 
-.footer__colon-3 {
+.block-six__flex--colons--colon-3 {
   width: 25%;
 }
 
-.footer__colon-4 {
+.block-six__flex--colons--colon-4 {
   width: 33.33%;
 }
 
-.footer__colon-5 {
+.block-six__flex--colons--colon-5 {
   width: 41.66%;
 }
 
-.footer__colon-6 {
+.block-six__flex--colons--colon-6 {
   width: 50%;
 }
 
-.footer__colon-7 {
+.block-six__flex--colons--colon-7 {
   width: 58.33%;
 }
 
-.footer__colon-8 {
+.block-six__flex--colons--colon-8 {
   width: 66.66%;
 }
 
-.footer__colon-9 {
+.block-six__flex--colons--colon-9 {
   width: 75%;
 }
 
-.footer__colon-10 {
+.block-six__flex--colons--colon-10 {
   width: 83.33%;
 }
 
-.footer__colon-11 {
+.block-six__flex--colons--colon-11 {
   width: 91.66%;
 }
-.footer__colon-12 {
+.block-six__flex--colons--colon-12 {
   width: 100%;
 }
 
-.footer-colon__text {
+.block-six__flex--colons--colon--text {
   font-size: 20px;
   font-weight: 400;
   line-height: 47px;
 }
 
-.footer-colon__text__header {
+.block-six__flex--colons--colon--text--header {
   font-weight: 500;
   font-size: 20px;
   line-height: 47px;
 }
 
-.footer__colontitul {
+.block-six__flex--colontitul-text {
   font-size: 14px;
 }
 
 @media only screen and (max-width: 360px) {
   /* For mobile phones Block 6: */
-  .footer__container {
+  .container {
     padding-top: 40px;
   }
 
-  .footer__header {
+  .block-six__header {
     display: block;
     margin: 0 auto;
     text-align: center;
   }
 
-  .footer__flex {
+  .block-six__flex {
     padding-top: 40px;
     padding-bottom: 40px;
     margin: 0 auto;
     text-align: center;
   }
 
-  .footer__flex-colons {
+  .block-six__flex--colons {
     margin-bottom: 32px;
   }
 
-  .footer-colon__text {
+  .block-six__flex--colons--colon--text {
     font-size: 10px;
     line-height: 11px;
     display: none;
   }
 
-  .footer-colon__text__header {
+  .block-six__flex--colons--colon--text--header {
     font-size: 15px;
     text-decoration: underline;
   }
 
-  .footer__colontitul {
+  .block-six__flex--colontitul-text {
     font-size: 12px;
   }
 }
