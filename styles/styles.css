@@ -10,6 +10,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.svg-sprites {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
 .container {
   max-width: 1264px;
   padding: 0 16px;
