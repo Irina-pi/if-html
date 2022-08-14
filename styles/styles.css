@@ -287,17 +287,19 @@ input {
     display: flex;
     border: 1px solid #ffffff;
     border-radius: 4px;
+    background-color: white;
   }
 
   .search-img {
     display: block;
     width: 16px;
+    margin-top: 16px;
+    margin-left: 12px;
   }
 
   .block-one__page--input--city-phone {
     display: block;
     width: 306px;
-    height: 48px;
     padding-left: 8px;
     font-weight: 500;
     font-size: 15px;
@@ -590,6 +592,7 @@ input {
 .block-three__location {
   font-weight: 400;
   font-size: 24px;
+  line-height: 1.3;
   color: #bfbfbf;
 }
 
@@ -664,8 +667,8 @@ input {
   border-radius: 50%;
   box-shadow: -1px 4px 4px 1px rgb(4 4 4 / 25%);
   position: relative;
-  top: 40%;
-  left: 95%;
+  top: 44%;
+  left: 94%;
 }
 
 .arrow {
@@ -801,7 +804,7 @@ input {
 
 @media only screen and (max-width: 360px) {
   /* For mobile phones Block 6: */
-  .container {
+  .container__block-six {
     padding-top: 40px;
   }
 
