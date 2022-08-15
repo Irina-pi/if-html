@@ -186,7 +186,7 @@ input {
   height: 40px;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 720px) {
   /* For mobile phones: */
   .phone {
     display: block;
@@ -467,7 +467,7 @@ input {
   grid-row: 3 / 4;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 700px) {
   /* For mobile phones Block 2 */
   .block-two__header_a:hover::after {
     display: block;
@@ -705,6 +705,79 @@ input {
     font-size: 12px;
   }
 }
+
+/*Block 4*/
+.block-four--header {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #383838;
+  text-align: center;
+  margin-bottom: 104px;
+  margin-top: 120px;
+}
+
+.block-four--nav {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 104px;
+}
+
+.block-four--nav--item {
+  font-size: 24px;
+  font-weight: 400;
+  color: #383838;
+}
+
+
+.block-four--sections {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 48px;
+  justify-content: space-between;
+}
+
+.block-four--sections-img {
+  width: 296px;
+  padding-bottom: 24px;
+
+}
+
+.block-four--sections-caption {
+  width: 296px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #3077C6;
+}
+
+.block-four--circle {
+  position: relative;
+  left: 49%;
+  margin-bottom: 120px;
+  box-shadow: 0px 3px 5px 1px rgb(4 4 4 / 25%);
+}
+
+.block-four--arrow {
+  position: relative;
+  top: 36%;
+  left: 20%;
+}
+
+.sing-up {
+  background-color: #EAF0F9;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.sing-up__text {
+  font-weight: 500;
+  font-size: 24px;
+  color: #383838;
+}
+
+
 
 /*Block 6*/
 .block-six {
