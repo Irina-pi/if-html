@@ -1290,6 +1290,334 @@ input {
 /*}*/
 
 
+
+
+
+/*for Block 5 */
+
+.block-five {
+  display: grid;
+  grid-template: auto / repeat(3, 400px);
+  padding: 120px 0;
+  column-gap: 16px;
+}
+
+.block-five__header {
+  grid-column: 1 / span 3;
+  grid-row: 1 / 2;
+  justify-self: center;
+  padding-bottom: 104px;
+  font-weight: 500;
+  font-size: 40px;
+  color: var(--black);
+}
+
+.block-five__img-section {
+  height: 400px;
+}
+
+.block-fivee__img {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.block-five__price {
+  height: 48px;
+  padding-top: 16px;
+  padding-left: 24px;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 18px;
+  background-color: rgba(56, 56, 56, 0.7);
+  position: relative;
+  bottom: 51px;
+}
+
+.block-five__img--terrace {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.block-five__img--hostel {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.block-five__img--hotel {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.block-five__caption {
+  background-color: var(--grey);
+  height: 358px;
+  display: grid;
+  grid-template: auto / repeat(3, auto);
+  padding: 24px 24px 66px 24px;
+  gap: 16px;
+}
+
+.block-five__caption--resort {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.block-five__caption--hostel {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.block-five__caption--hotel {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.block-five__caption--name {
+  grid-column: 1 / span 2;
+  grid-row: 1 / 2;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--blue);
+}
+
+.block-five__caption--location {
+  grid-column: 1 / span 2;
+  grid-row: 2 / 3;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--blue);
+}
+
+.block-five__caption--grade-block {
+  grid-column: 3 / 4;
+  grid-row: 1 / span 2;
+}
+
+.block-five__caption--grade {
+  /*grid-column: 3 / 4;*/
+  /*grid-row: 1 / span 2;*/
+  width: 48px;
+  height: 32px;
+  padding: 4px 11px;
+  margin-bottom: 8px;
+  background-color: #10367C;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.block-five__caption--reviews {
+  /*grid-column: 3 / 4;*/
+  /*grid-row: 2 / 3;*/
+  font-weight: 400;
+  font-size: 14px;
+  color: #BFBFBF;
+}
+
+.block-five__caption--logo {
+  grid-column: 1 / 2;
+  grid-row: 3 / span 2;
+}
+
+.block-five__caption--logo--svg-sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.block-five__caption--logo--svg {
+  width: 53px;
+  height: 53px;
+  color: #BFBFBF;
+}
+
+.block-five__caption--review {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--black);
+}
+
+.block-five__caption--location-review {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  font-weight: 400;
+  font-size: 18px;
+  color: #BFBFBF;
+}
+
+.block-five__caption--text-review {
+  grid-column: 1 / span 3;
+  grid-row: 5 / 6;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--black);
+
+}
+
+/*.block-three__caption {*/
+/*  font-weight: 400;*/
+/*  font-size: 24px;*/
+/*  color: #3077c6;*/
+/*  padding: 24px 0;*/
+/*}*/
+
+/*.block-three__location {*/
+/*  font-weight: 400;*/
+/*  font-size: 24px;*/
+/*  color: #bfbfbf;*/
+/*}*/
+
+/*.block-three__img--hotel {*/
+/*  grid-column: 1 / 2;*/
+/*  grid-row: 2 / 3;*/
+/*  !*background-image: url("../images/Rectangle 48.png");*!*/
+/*}*/
+
+/*.block-three__caption--hotel {*/
+/*  grid-column: 1 / 2;*/
+/*  grid-row: 3 / 4;*/
+/*}*/
+
+/*.block-three__location--hotel {*/
+/*  grid-column: 1 / 2;*/
+/*  grid-row: 4 / 5;*/
+/*}*/
+
+/*.block-three__img--appartment {*/
+/*  grid-column: 2 / 3;*/
+/*  grid-row: 2 / 3;*/
+/*  !*background-image: url("../images/Rectangle 49.png");*!*/
+/*}*/
+
+/*.block-three__caption--appartment {*/
+/*  grid-column: 2 / 3;*/
+/*  grid-row: 3 / 4;*/
+/*}*/
+
+/*.block-three__location--appartment {*/
+/*  grid-column: 2 / 3;*/
+/*  grid-row: 4 / 5;*/
+/*}*/
+
+/*.block-three__img--villa {*/
+/*  grid-column: 3 / 4;*/
+/*  grid-row: 2 / 3;*/
+/*  !*background-image: url("../images/Rectangle 50.png");*!*/
+/*}*/
+
+/*.block-three__caption--villa {*/
+/*  grid-column: 3 / 4;*/
+/*  grid-row: 3 / 4;*/
+/*}*/
+
+/*.block-three__location--villa {*/
+/*  grid-column: 3 / 4;*/
+/*  grid-row: 4 / 5;*/
+/*}*/
+
+/*.block-three__img--hostel {*/
+/*  grid-column: 4 / 5;*/
+/*  grid-row: 2 / 3;*/
+/*  !*background-image: url("../images/Rectangle 51.png");*!*/
+/*}*/
+
+/*.block-three__caption--hostel {*/
+/*  grid-column: 4 / 5;*/
+/*  grid-row: 3 / 4;*/
+/*}*/
+
+/*.block-three__location--hostel {*/
+/*  grid-column: 4 / 5;*/
+/*  grid-row: 4 / 5;*/
+/*}*/
+
+/*.circle {*/
+/*  background: #f3f3f4;*/
+/*  width: 40px;*/
+/*  height: 40px;*/
+/*  border-radius: 50%;*/
+/*  box-shadow: -1px 4px 4px 1px rgb(4 4 4 / 25%);*/
+/*  position: relative;*/
+/*  bottom: 58%;*/
+/*  left: 93%;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.arrow {*/
+/*  position: relative;*/
+/*  top: 25%;*/
+/*  left: 40%;*/
+/*}*/
+
+/*@media only screen and (max-width: 360px) {*/
+/*  !* For mobile phones Block 3: *!*/
+/*  .desktop {*/
+/*    display: none;*/
+/*  }*/
+
+/*  .block-three {*/
+/*    grid-template: auto / repeat(2, 156px);*/
+/*    padding: 0 0 40px 0;*/
+/*  }*/
+
+/*  .block-three__header {*/
+/*    grid-column: 1 / span 2;*/
+/*    padding-bottom: 32px;*/
+/*    font-size: 28px;*/
+/*    text-align: center;*/
+/*  }*/
+
+/*  .block-three__img {*/
+/*    width: 156px;*/
+/*    height: 155px;*/
+/*  }*/
+
+/*  .block-three__caption {*/
+/*    font-size: 12px;*/
+/*    padding: 8px 0 4px;*/
+/*  }*/
+
+/*  .block-three__location {*/
+/*    font-size: 12px;*/
+/*  }*/
+
+/*  .circle {*/
+/*    background: #f3f3f4;*/
+/*    width: 28px;*/
+/*    height: 28px;*/
+/*    border-radius: 50%;*/
+/*    box-shadow: -1px 4px 4px 1px rgb(4 4 4 / 25%);*/
+/*    position: relative;*/
+/*    bottom: 64%;*/
+/*    left: 89%;*/
+/*    cursor: pointer;*/
+/*  }*/
+
+/*  .arrow {*/
+/*    width: 5px;*/
+/*    height: 13px;*/
+/*    position: relative;*/
+/*    top: 27%;*/
+/*    left: 45%;*/
+/*  }*/
+/*}*/
+
+
+
+
+
+
+
+
+
 /*Block 6*/
 .block-six {
   background-color: #10367c;
