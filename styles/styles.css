@@ -73,6 +73,10 @@ input {
   display: flex;
 }
 
+.href-block {
+  margin-top: 6px;
+}
+
 .block-one__header--right--href {
   margin-right: 24px;
   font-size: 24px;
@@ -115,7 +119,7 @@ input {
   width: 30px;
   height: 30px;
   margin-right: 24px;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .block-one__header--right--logotip--account {
@@ -149,6 +153,15 @@ input {
   margin-bottom: 24px;
 }
 
+.block-one__page--underform {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
+  position: relative;
+  bottom: 48px;
+  left: 24px;
+}
+
 .block-one__page--form {
   max-width: 1223px;
   display: flex;
@@ -158,23 +171,56 @@ input {
   border: 3px solid #f3f3f4;
   border-right: #3077c6;
   border-radius: 8px;
+  height: 64px;
+  border-right: #3077c6;
 }
 
 .block-one__page--form--filters {
   display: flex;
   width: 84%;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
 }
 
 .block-one__page--input--city-desktop {
-  width: 45.5%;
+  width: 85%;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+}
+
+.block-one__page--input--city-block {
+  width: 44%;
+}
+
+.block-one__page--input--city {
   font-weight: 400;
   font-size: 18px;
   color: #383838;
   padding-left: 24px;
 }
 
+
+.block-one__page--input--data-block {
+  width: 26%;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  margin: -3px;
+  text-align: center;
+}
+
+.block-one__page--underform-data {
+  position: relative;
+  left: -24px;
+}
+
+.block-one__page--input--data {
+  font-weight: 400;
+  font-size: 18px;
+  color: #383838;
+}
+
 .block-one__page--input--data-desktop {
-  width: 25%;
+  width: 26%;
   font-weight: 400;
   font-size: 18px;
   color: #383838;
@@ -184,14 +230,24 @@ input {
 }
 
 .block-one__page--input--nomer-desktop {
-  width: 30.5%;
+  width: 31%;
   text-align: center;
   font-weight: 400;
   font-size: 18px;
+  margin-left: 3px;
+}
+
+
+.block-one__page--input--nomer {
+  width: 31%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 3px;
 }
 
 .block-one__page--form--button {
-  width: 16%;
+  width: calc(15% + 9px);
   height: 64px;
   color: #ffffff;
   border: 6px solid #3077c6;
