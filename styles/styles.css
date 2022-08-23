@@ -1,5 +1,4 @@
 @import url("./fonts.css");
-@import url("./all.min.css");
 
 * {
   margin: 0;
@@ -94,62 +93,75 @@ input {
   color: #ffffff;
   font-weight: 500;
   font-size: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 145px;
 }
 
 .block-one__page--underform {
-  padding-left: 24px;
-  display: flex;
-  gap: 221px;
   color: #ffffff;
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: 24px;
+  position: relative;
+  bottom: 48px;
+  left: 24px;
 }
 
 .block-one__page--form {
   max-width: 1223px;
   height: 64px;
   display: flex;
-  margin-right: 9px;
   margin-bottom: 120px;
   background: #ffffff;
-  border: 3px solid #f3f3f4;
-  border-right: #3077c6;
   border-radius: 8px;
+  border-right: #3077c6;
 }
 
 .block-one__page--form--filters {
   display: flex;
+  width: 85%;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+}
+
+.block-one__page--input--city-block {
+  width: 44%;
 }
 
 .block-one__page--input--city {
-  width: 467px;
   font-weight: 400;
   font-size: 18px;
   color: #383838;
   padding-left: 24px;
 }
 
+.block-one__page--input--data-block {
+  width: 26%;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  margin: -3px;
+  text-align: center;
+}
+
+.block-one__page--underform-data {
+  position: relative;
+  left: -24px;
+}
+
 .block-one__page--input--data {
-  width: 259px;
   font-weight: 400;
   font-size: 18px;
   color: #383838;
-  text-align: center;
-  border: 3px solid #f5bd41;
-  border-radius: 8px;
 }
 
 .block-one__page--input--nomer {
-  width: 305px;
+  width: 31%;
   text-align: center;
   font-weight: 400;
   font-size: 18px;
+  margin-left: 3px;
 }
 
 .block-one__page--form--button {
-  width: 192px;
+  width: calc(15% + 9px);
   height: 64px;
   color: #ffffff;
   border: 6px solid #3077c6;
@@ -175,12 +187,6 @@ input {
   width: 118px;
   height: 40px;
 }
-
-
-
-
-
-
 
 /*for Block 2 */
 .block-two {
