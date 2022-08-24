@@ -179,7 +179,7 @@
             </a>
           </div>
           <div class="block-one__header--right">
-            <div>
+            <div class="under-href">
               <a
                 class="block-one__header--right--href block-one__header--right--href--stays"
                 href="#"
@@ -215,17 +215,16 @@
             <p>Discover stays</p>
             <p>to live, work or just relax</p>
           </div>
-          <div class="block-one__page--underform">
-            <div>Your destination or hotel name</div>
-            <div>Check-in — Check-out</div>
-          </div>
           <form class="block-one__page--form">
             <div class="block-one__page--form--filters">
-              <input
-                class="block-one__page--input--city-desktop desktop"
-                type="text"
-                placeholder="New York"
-              />
+              <div class="block-one__page--input--city-block-desktop">
+                <label class="block-one__page--underform" for="input--city-desktop">Your destination or hotel name</label>
+                <input id="input--city-desktop"
+                       class="block-one__page--input--city-desktop desktop"
+                       type="text"
+                       placeholder="New York"
+                />
+              </div>
               <!--For mobile phone-->
               <div class="block-one__page--form--city-phone phone">
                   <svg class="search-img phone" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -237,12 +236,15 @@
                   placeholder="Your destination or hotel name"
                 />
               </div>
-              <input
-                class="block-one__page--input--data-desktop desktop"
-                type="text"
-                placeholder="Tue 15 Sept — Sat 19 Sept"
-                onfocus="(this.type='date')"
-              />
+              <div class="block-one__page--input--data-block-desktop">
+                <label class="block-one__page--underform block-one__page--underform-data" for="input--data-desktop">Check-in — Check-out</label>
+                <input id="input--data-desktop"
+                       class="block-one__page--input--data-desktop desktop"
+                       type="text"
+                       placeholder="Tue 15 Sept — Sat 19 Sept"
+                       onfocus="(this.type='date')"
+                />
+              </div>
               <!--For mobile phone-->
               <div class="block-one__page--form--data-phone phone">
                 <div class="block-one__page--form--data--check phone">

@@ -1,5 +1,4 @@
 @import url("./fonts.css");
-@import url("./all.min.css");
 
 * {
   margin: 0;
@@ -41,7 +40,7 @@ input {
 
 .block-one__header {
   padding-top: 51px;
-  padding-bottom: 202px;
+  padding-bottom: 198px;
   display: flex;
   justify-content: space-between;
 }
@@ -53,6 +52,10 @@ input {
 
 .block-one__header--right {
   display: flex;
+}
+
+.under-href {
+  margin-top: 6px;
 }
 
 .block-one__header--right--href {
@@ -86,6 +89,7 @@ input {
   width: 30px;
   height: 30px;
   margin-right: 24px;
+  margin-bottom: 5px;
 }
 
 .block-one__header--right--logotip--account {
@@ -105,40 +109,53 @@ input {
   color: #ffffff;
   font-weight: 500;
   font-size: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 145px;
 }
 
 .block-one__page--underform {
-  padding-left: 24px;
-  display: flex;
-  gap: 221px;
   color: #ffffff;
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: 24px;
+  position: relative;
+  bottom: 48px;
+  left: 24px;
 }
 
 .block-one__page--form {
   max-width: 1223px;
+  height: 64px;
   display: flex;
-  margin-right: 9px;
   margin-bottom: 120px;
   background: #ffffff;
-  border: 3px solid #f3f3f4;
   border-right: #3077c6;
   border-radius: 8px;
+
 }
 
 .block-one__page--form--filters {
   display: flex;
+  width: 85%;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+}
+
+.block-one__page--input--city-block-desktop {
+  width: 44%;
 }
 
 .block-one__page--input--city-desktop {
-  width: 467px;
   font-weight: 400;
   font-size: 18px;
   color: #383838;
   padding-left: 24px;
+}
+
+.block-one__page--input--data-block-desktop {
+  width: 26%;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  margin: -3px;
+  text-align: center;
 }
 
 .block-one__page--input--data-desktop {
@@ -146,9 +163,6 @@ input {
   font-weight: 400;
   font-size: 18px;
   color: #383838;
-  text-align: center;
-  border: 3px solid #f5bd41;
-  border-radius: 8px;
 }
 
 .block-one__page--input--nomer-desktop {
@@ -159,7 +173,7 @@ input {
 }
 
 .block-one__page--form--button {
-  width: 192px;
+  width: calc(15% + 9px);
   height: 64px;
   color: #ffffff;
   border: 6px solid #3077c6;
@@ -379,7 +393,7 @@ input {
 /*for Block 2 */
 .block-two {
   display: grid;
-  grid-template: auto / repeat(4, 296px);
+  grid-template: auto / repeat(4, 25%);
   margin: 120px 0;
   column-gap: 16px;
 }
@@ -560,7 +574,7 @@ input {
 
 .block-three {
   display: grid;
-  grid-template: auto / repeat(4, 296px);
+  grid-template: auto / repeat(4, 25%);
   padding: 120px 0;
   column-gap: 16px;
 }
@@ -578,7 +592,7 @@ input {
 .block-three__img {
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 296px;
+  width: 100%;
   height: 296px;
 }
 
