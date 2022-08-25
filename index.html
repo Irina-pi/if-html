@@ -179,7 +179,7 @@
             </a>
           </div>
           <div class="block-one__header--right">
-            <div>
+            <div class="block-one__href-block desktop">
               <a
                 class="block-one__header--right--href block-one__header--right--href--stays"
                 href="#"
@@ -215,17 +215,16 @@
             <p>Discover stays</p>
             <p>to live, work or just relax</p>
           </div>
-          <div class="block-one__page--underform">
-            <div>Your destination or hotel name</div>
-            <div>Check-in — Check-out</div>
-          </div>
           <form class="block-one__page--form">
             <div class="block-one__page--form--filters">
-              <input
-                class="block-one__page--input--city-desktop desktop"
-                type="text"
-                placeholder="New York"
-              />
+              <div class="input--city-block-desktop desktop">
+                <label class="block-one__page--underform desktop" for="input--city-desktop">Your destination or hotel name</label>
+                <input id="input--city-desktop"
+                       class="block-one__page--input--city-desktop desktop"
+                       type="text"
+                       placeholder="New York"
+                />
+              </div>
               <!--For mobile phone-->
               <div class="block-one__page--form--city-phone phone">
                 <img
@@ -239,12 +238,15 @@
                   placeholder="Your destination or hotel name"
                 />
               </div>
-              <input
-                class="block-one__page--input--data-desktop desktop"
-                type="text"
-                placeholder="Tue 15 Sept — Sat 19 Sept"
-                onfocus="(this.type='date')"
-              />
+              <div class="input--data-block-desktop desktop">
+                <label class="block-one__page--underform block-one__page--underform-data desktop" for="input--data-desktop">Check-in — Check-out</label>
+                <input id="input--data-desktop"
+                       class="block-one__page--input--data-desktop desktop"
+                       type="text"
+                       placeholder="Tue 15 Sept — Sat 19 Sept"
+                       onfocus="(this.type='date')"
+                />
+              </div>
               <!--For mobile phone-->
               <div class="block-one__page--form--data-phone phone">
                 <div class="block-one__page--form--data--check phone">
@@ -420,7 +422,7 @@
       <div class="container">
         <div class="block-three">
           <div class="block-three__header">Ноmes guests loves</div>
-          <div class="block-three__img block-three__img--hotel">
+          <div class="block-three__img--hotel">
             <img class="block-three__img" src="././images/Rectangle%2048.png" alt="Hotel">
           </div>
           <div class="block-three__caption block-three__caption--hotel">
@@ -429,7 +431,7 @@
           <div class="block-three__location block-three__location--hotel">
             Saint Petersburg, Russia
           </div>
-          <div class="block-three__img block-three__img--appartment">
+          <div class="block-three__img--appartment">
             <img class="block-three__img" src="././images/Rectangle%2049.png" alt="Appartment">
             <div class="circle phone">
               <svg
@@ -455,7 +457,7 @@
             Santa Cruz de Tenerife, Spain
           </div>
           <div class="block-three__img block-three__img--villa desktop">
-            <img src="././images/Rectangle%2050.png" alt="Villa">
+            <img class="block-three__img" src="././images/Rectangle%2050.png" alt="Villa">
           </div>
           <div class="block-three__caption block-three__caption--villa desktop">
             Villa Kunerad
@@ -466,7 +468,7 @@
             Vysokie Tatry, Slowakia
           </div>
           <div class="block-three__img block-three__img--hostel desktop">
-            <img src="././images/Rectangle%2051.png" alt="Hostel">
+            <img class="block-three__img" src="././images/Rectangle%2051.png" alt="Hostel">
             <div class="circle">
               <svg
                 class="arrow"
@@ -500,12 +502,12 @@
   <!--Block 4-->
   <div class="block-four container">
     <header class="block-four__header center-lg">The best destinations</header>
-    <section class="block-four__navigation row">
+    <nav class="block-four__navigation row">
       <p class="block-four__navigation--p ">Regions</p>
       <p class="block-four__navigation--p">Cities</p>
       <p class="block-four__navigation--p desktop">Places of interest</p>
       <p class="block-four__navigation--p desktop phone">Places</p>
-    </section>
+    </nav>
     <section class="block-four__content row">
         <figure class="block-four__content--figure">
           <img class="block-four__content--figure--img" src="././images/Maldives.png" alt="Maldives">
@@ -542,11 +544,11 @@
           <figcaption class="block-four__content--figure--figcaption desktop">Island</figcaption>
         </figure>
     </section>
-    <section class="block-four--circle desktop">
+    <div class="block-four--circle desktop">
       <svg class="block-four__content--arrow desktop" width="21" height="9" viewBox="0 0 21 9" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="m1.176 1 8.212 6.159a2 2 0 0 0 2.4 0L20 1" stroke="#383838" stroke-width="2"/>
       </svg>
-    </section>
+    </div>
     <section class="block-four__signup row">
       <div class="block-four__signup--install phone">Install</div>
       <div class="block-four__signup--logo desktop">
@@ -573,69 +575,14 @@
       </div>
     </section>
   </div>
-<!--  <div class="container">-->
-<!--    <header class="block-four&#45;&#45;header">The best destinations</header>-->
-<!--    <nav class="block-four&#45;&#45;nav">-->
-<!--        <div class="block-four&#45;&#45;nav&#45;&#45;item block-four&#45;&#45;nav&#45;&#45;item&#45;&#45;regions">Regions</div>-->
-<!--        <div class="block-four&#45;&#45;nav&#45;&#45;item block-four&#45;&#45;nav&#45;&#45;item&#45;&#45;cities">Cities</div>-->
-<!--        <div class="block-four&#45;&#45;nav&#45;&#45;item block-four&#45;&#45;nav&#45;&#45;item&#45;&#45;places">Places of interest</div>-->
-<!--    </nav>-->
-<!--    <section class="block-four&#45;&#45;sections">-->
-<!--      <figure>-->
-<!--        <img class="block-four&#45;&#45;sections-img" src="././images/Maldives.png" alt="Maldives">-->
-<!--        <figcaption class="block-four&#45;&#45;sections-caption">Maldives</figcaption>-->
-<!--      </figure>-->
-<!--      <figure>-->
-<!--        <img class="block-four&#45;&#45;sections-img" src="././images/Spain.png" alt="Spain">-->
-<!--        <figcaption class="block-four&#45;&#45;sections-caption">Spain</figcaption>-->
-<!--      </figure>-->
-<!--      <figure>-->
-<!--        <img class="block-four&#45;&#45;sections-img" src="././images/Norway.png" alt="Norway">-->
-<!--        <figcaption class="block-four&#45;&#45;sections-caption">Norway</figcaption>-->
-<!--      </figure>-->
-<!--      <figure>-->
-<!--        <img class="block-four&#45;&#45;sections-img" src="././images/island.png" alt="Island">-->
-<!--        <figcaption class="block-four&#45;&#45;sections-caption">Island</figcaption>-->
-<!--      </figure>-->
-<!--    </section>-->
-<!--&lt;!&ndash;    <button class="block-four&#45;&#45;button">Book now</button>&ndash;&gt;-->
-<!--    <div class="block-four&#45;&#45;circle circle">-->
-<!--      <svg class="block-four&#45;&#45;arrow" width="21" height="9" viewBox="0 0 21 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1.176 1 8.212 6.159a2 2 0 0 0 2.4 0L20 1" stroke="#383838" stroke-width="2"/>-->
-<!--      </svg>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--  <div class="container">-->
-<!--    <div class="sing-up">-->
-<!--      <div class="left">-->
-<!--        <svg class="sing-up__logotip" width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--          <circle cx="43" cy="43" r="43" fill="#fff"/>-->
-<!--          <path d="M46.652 55.748c0-2.056.511-4.03 1.473-5.79a54.137 54.137 0 0 0-2.782-1.472.362.362 0 0 1-.205-.338v-8.08a3.776 3.776 0 0 0 1.688-3.141v-8.378A7.55 7.55 0 0 0 39.276 21h-1.8a7.55 7.55 0 0 0-7.549 7.55v8.377c0 1.31.675 2.465 1.688 3.14v8.081a.38.38 0 0 1-.205.338c-1.155.562-6.75 3.386-11.937 7.651A4.04 4.04 0 0 0 18 59.277v5.739h32.979a10.52 10.52 0 0 1-.788-.726 12.01 12.01 0 0 1-3.54-8.542Z" fill="#3077C6"/><path d="M58.732 46.48c-5.114 0-9.267 4.154-9.267 9.268 0 5.115 4.153 9.268 9.267 9.268 5.115 0 9.268-4.153 9.268-9.268a9.266 9.266 0 0 0-9.268-9.267ZM64.154 57.1h-4.071v4.07h-2.7V57.1H53.31v-2.701h4.071v-4.071h2.7v4.071h4.072v2.7Z" fill="#3077C6"/>-->
-<!--        </svg>-->
-<!--        <div class="sing-up__content">-->
-<!--          <p class="sing-up__content&#45;&#45;text">Sign up and get 20% off your first booking</p>-->
-<!--          <button class="sing-up__content&#45;&#45;button">Sign up</button>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="right">-->
-<!--        <svg class="sing-up__close" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--          <path d="M26 1.486 24.514 0 13 11.514 1.486 0 0 1.486 11.514 13 0 24.514 1.486 26 13 14.486 24.514 26 26 24.514 14.486 13 26 1.486Z" fill="#BFBFBF"/>-->
-<!--        </svg>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-
-
   <!--Block 5-->
     <div class="container">
       <div class="block-five">
         <header class="block-five__header">Guests reviews</header>
-
-
         <section class="block-five__img-section block-five__img--resort">
           <img class="block-five__img" src="images/resort.png" alt="Resort">
           <div class="block-five__price">From 250 USD</div>
         </section>
-
         <section class="block-five__caption block-five__caption--resort">
           <p class="block-five__caption--name block-five__caption--name--resort">Ubud Bali Resort&SPA</p>
           <p class="block-five__caption--location block-five__caption--location--resort">Bali, Indonesia</p>
@@ -643,30 +590,24 @@
             <div class="block-five__caption--grade block-five__caption--grade--resort">9,4</div>
             <p class="block-five__caption--reviews block-five__caption--reviews--resort">1324 reviews</p>
           </div>
-
             <svg class="block-five__caption--logo--svg-sprite" xmlns="http://www.w3.org/2000/svg">
               <symbol id="account_circle" viewBox="0 0 64 64">
                 <path d="M32 5.33337C17.28 5.33337 5.33331 17.28 5.33331 32C5.33331 46.72 17.28 58.6667 32 58.6667C46.72 58.6667 58.6666 46.72 58.6666 32C58.6666 17.28 46.72 5.33337 32 5.33337ZM32 13.3334C36.4266 13.3334 40 16.9067 40 21.3334C40 25.76 36.4266 29.3334 32 29.3334C27.5733 29.3334 24 25.76 24 21.3334C24 16.9067 27.5733 13.3334 32 13.3334ZM32 51.2C25.3333 51.2 19.44 47.7867 16 42.6134C16.08 37.3067 26.6666 34.4 32 34.4C37.3066 34.4 47.92 37.3067 48 42.6134C44.56 47.7867 38.6666 51.2 32 51.2Z" fill="#BFBFBF"/>
               </symbol>
             </svg>
-
             <div class="block-five__caption--logo block-five__caption--logo--resort">
               <svg class="block-five__caption--logo--svg" xmlns="http://www.w3.org/2000/svg">
                 <use href="#account_circle"/>
               </svg>
             </div>
-
           <p class="block-five__caption--review block-five__caption--review--resort">Hanna Ivanova</p>
           <p class="block-five__caption--location-review block-five__caption--location-review--resort">	&#127482;&#127462; Ukraine</p>
           <p class="block-five__caption--text-review block-five__caption--text-review--resort">Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice. </p>
         </section>
-
-
         <section class="block-five__img-section block-five__img--hostel">
           <img class="block-five__img" src="././images/hostel.png" alt="Hostel">
           <div class="block-five__price">From 40 USD</div>
         </section>
-
         <section class="block-five__caption block-five__caption--hostel">
           <p class="block-five__caption--name block-five__caption--name--hostel">King Kong Hostel</p>
           <p class="block-five__caption--location block-five__caption--location--hostel">Rotterdam, Netherlands</p>
@@ -687,12 +628,10 @@
             <br>
             Most importantly, those who work here are kind and good-natured.</p>
         </section>
-
         <section class="block-five__img-section block-five__img--hotel">
           <img class="block-five__img" src="././images/hotel.png" alt="Hotel">
           <div class="block-five__price">From 100 USD</div>
         </section>
-
         <section class="block-five__caption block-five__caption--hotel">
           <p class="block-five__caption--name block-five__caption--name--hotel">Rokoko Hotel</p>
           <p class="block-five__caption--location block-five__caption--location--hotel">Ourika, Marocco</p>
@@ -709,90 +648,8 @@
           <p class="block-five__caption--location-review block-five__caption--location-review--hotel">&#127465;&#127466; Germany</p>
           <p class="block-five__caption--text-review block-five__caption--text-review--hotel">Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco. </p>
         </section>
-
       </div>
     </div>
-
-
-<!--  <div class="block-three__img block-three__img&#45;&#45;hotel">-->
-<!--    <img class="block-three__img" src="././images/Rectangle%2048.png" alt="Hotel">-->
-<!--  </div>-->
-<!--  <div class="block-three__caption block-three__caption&#45;&#45;hotel">-->
-<!--    Hotel Leopold-->
-<!--  </div>-->
-<!--  <div class="block-three__location block-three__location&#45;&#45;hotel">-->
-<!--    Saint Petersburg, Russia-->
-<!--  </div>-->
-<!--  <div class="block-three__img block-three__img&#45;&#45;appartment">-->
-<!--    <img class="block-three__img" src="././images/Rectangle%2049.png" alt="Appartment">-->
-<!--    <div class="circle phone">-->
-<!--      <svg-->
-<!--        class="arrow phone"-->
-<!--        width="9"-->
-<!--        height="21"-->
-<!--        viewBox="0 0 9 21"-->
-<!--        fill="none"-->
-<!--        xmlns="http://www.w3.org/2000/svg"-->
-<!--      >-->
-<!--        <path-->
-<!--          d="M.941 19.823 7.1 11.612a2 2 0 0 0 0-2.4L.941 1"-->
-<!--          stroke="#383838"-->
-<!--          stroke-width="2"-->
-<!--        />-->
-<!--      </svg>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--  <div class="block-three__caption block-three__caption&#45;&#45;appartment">-->
-<!--    Apartment Sunshine-->
-<!--  </div>-->
-<!--  <div class="block-three__location block-three__location&#45;&#45;appartment">-->
-<!--    Santa Cruz de Tenerife, Spain-->
-<!--  </div>-->
-<!--  <div class="block-three__img block-three__img&#45;&#45;villa desktop">-->
-<!--    <img src="././images/Rectangle%2050.png" alt="Villa">-->
-<!--  </div>-->
-<!--  <div class="block-three__caption block-three__caption&#45;&#45;villa desktop">-->
-<!--    Villa Kunerad-->
-<!--  </div>-->
-<!--  <div-->
-<!--    class="block-three__location block-three__location&#45;&#45;villa desktop"-->
-<!--  >-->
-<!--    Vysokie Tatry, Slowakia-->
-<!--  </div>-->
-<!--  <div class="block-three__img block-three__img&#45;&#45;hostel desktop">-->
-<!--    <img src="././images/Rectangle%2051.png" alt="Hostel">-->
-<!--    <div class="circle">-->
-<!--      <svg-->
-<!--        class="arrow"-->
-<!--        width="9"-->
-<!--        height="21"-->
-<!--        viewBox="0 0 9 21"-->
-<!--        fill="none"-->
-<!--        xmlns="http://www.w3.org/2000/svg"-->
-<!--      >-->
-<!--        <path-->
-<!--          d="M.941 19.823 7.1 11.612a2 2 0 0 0 0-2.4L.941 1"-->
-<!--          stroke="#383838"-->
-<!--          stroke-width="2"-->
-<!--        />-->
-<!--      </svg>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--  <div-->
-<!--    class="block-three__caption block-three__caption&#45;&#45;hostel desktop"-->
-<!--  >-->
-<!--    Hostel Friendship-->
-<!--  </div>-->
-<!--  <div-->
-<!--    class="block-three__location block-three__location&#45;&#45;hostel desktop"-->
-<!--  >-->
-<!--    Berlin, Germany-->
-<!--  </div>-->
-
-
-
-
-
     <!--Block 6-->
     <div class="block-six">
       <div class="container">
