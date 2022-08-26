@@ -215,134 +215,175 @@
             <p>Discover stays</p>
             <p>to live, work or just relax</p>
           </div>
+
+
+
           <form class="block-one__page--form">
-            <div class="block-one__page--form--filters">
-              <div class="block-one__page--input--city-block">
-                <label
-                  class="block-one__page--underform"
-                  for="block_one_input_city"
-                >Your destination or hotel name</label
-                >
-                <input
-                  id="block_one_input_city"
-                  class="block-one__page--input--city-desktop desktop"
-                  type="text"
-                  placeholder="New York"
-                />
+            <div class="block-one__page__form--filters">
+              <div class="block-one__page__form__filters--city">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 0 0 1.437-3.87 5.946 5.946 0 1 0-5.947 5.947 5.92 5.92 0 0 0 3.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574Zm-5.489 0A4.111 4.111 0 0 1 1.83 5.946 4.111 4.111 0 0 1 5.946 1.83a4.111 4.111 0 0 1 4.117 4.116 4.111 4.111 0 0 1-4.117 4.117Z" fill="#BFBFBF"/>
+                </svg>
+                <label for="block_one_input_city">Your destination or hotel name</label>
+                <input id="block_one_input_city" type="text" placeholder="New York">
               </div>
-              <!--For mobile phone-->
-              <div class="block-one__page--form--city-phone phone">
-                <img
-                  class="search-img phone"
-                  src="./images/seach.png"
-                  alt="seach"
-                />
-                <input
-                  class="block-one__page--input--city-phone phone"
-                  type="text"
-                  placeholder="Your destination or hotel name"
-                />
+
+              <div class="block-one__page__form__filters--data">
+                <label for="block_one_input_data">Check-in — Check-out</label>
+                <input id="block_one_input_data" type="text" placeholder="Tue 15 Sept 2020"
+                       onfocus="(this.type='date')">
+                <input type="text" placeholder="Sat 19 Sept 2020"
+                       onfocus="(this.type='date')">
               </div>
-              <div class="block-one__page--input--data-block">
-                <label
-                  class="block-one__page--underform block-one__page--underform-data"
-                  for="block_one_input_data">Check-in — Check-out
-                </label>
-                <input
-                  id="block_one_input_data"
-                  class="block-one__page--input--data-desktop desktop"
-                  type="text"
-                  placeholder="Tue 15 Sept — Sat 19 Sept"
-                  onfocus="(this.type='date')"
-                />
+
+              <div class="block-one__page__form__filters--room">
+                <label for="block_one_input_adults">Adults</label>
+                <input id="block_one_input_adults" type="text" placeholder="2">
+                <label for="block_one_input_children">Children</label>
+                <input id="block_one_input_children" type="text" placeholder="0">
+                <label for="block_one_input_room">Rooms</label>
+                <input id="block_one_input_room" type="text" placeholder="1">
               </div>
-              <!--For mobile phone-->
-              <div class="block-one__page--form--data-phone phone">
-                <div class="block-one__page--form--data--check phone">
-                  <div class="block-one__page--form--data--check-text phone">
-                    Check-in
-                  </div>
-                  <input
-                    class="block-one__page--input--data-phone phone"
-                    type="text"
-                    placeholder="Tue 15 Sept 2020"
-                    onfocus="(this.type='date')"
-                  />
-                </div>
-                <div class="block-one__page--form--data--check phone">
-                  <div class="block-one__page--form--data--check-text phone">
-                    Check-out
-                  </div>
-                  <input
-                    class="block-one__page--input--data-phone phone"
-                    type="text"
-                    placeholder="Sat 19 Sept 2020"
-                  />
-                </div>
-              </div>
-              <input
-                class="block-one__page--input--nomer-desktop desktop"
-                type="text"
-                placeholder="2 Adults — 0 Children — 1 Room"
-              />
-              <!--For mobile phone-->
-              <div class="block-one__page--form--nomer-phone phone">
-                <div class="block-one__page--form--nomer--filter phone">
-                  <div class="block-one__page--form--nomer--filter-text phone">
-                    Adults
-                  </div>
-                  <input
-                    class="block-one__page--form--nomer--filter-input phone"
-                    type="text"
-                    placeholder="2"
-                  />
-                </div>
-                <div class="block-one__page--form--nomer--line phone">
-                  <svg
-                    width="1"
-                    height="32"
-                    viewBox="0 0 1 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path stroke="#BFBFBF" d="M.5 0v32" />
-                  </svg>
-                </div>
-                <div class="block-one__page--form--nomer--filter phone">
-                  <div class="block-one__page--form--nomer--filter-text phone">
-                    Children
-                  </div>
-                  <input
-                    class="block-one__page--form--nomer--filter-input phone"
-                    type="text"
-                    placeholder="0"
-                  />
-                </div>
-                <div class="block-one__page--form--nomer--line phone">
-                  <svg
-                    width="1"
-                    height="32"
-                    viewBox="0 0 1 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path stroke="#BFBFBF" d="M.5 0v32" />
-                  </svg>
-                </div>
-                <div class="block-one__page--form--nomer--filter phone">
-                  <div class="block-one__page--form--nomer--filter-text phone">
-                    Room
-                  </div>
-                  <input
-                    class="block-one__page--form--nomer--filter-input phone"
-                    type="text"
-                    placeholder="1"
-                  />
-                </div>
-              </div>
+
             </div>
             <button class="block-one__page--form--button">Search</button>
           </form>
+
+
+
+<!--          <form class="block-one__page&#45;&#45;form">-->
+<!--            <div class="block-one__page&#45;&#45;form&#45;&#45;filters">-->
+<!--              <div class="block-one__page&#45;&#45;input&#45;&#45;city-block">-->
+<!--                <label-->
+<!--                  class="block-one__page&#45;&#45;underform"-->
+<!--                  for="block_one_input_city"-->
+<!--                >Your destination or hotel name</label-->
+<!--                >-->
+<!--                <input-->
+<!--                  id="block_one_input_city"-->
+<!--                  class="block-one__page&#45;&#45;input&#45;&#45;city-desktop desktop"-->
+<!--                  type="text"-->
+<!--                  placeholder="New York"-->
+<!--                />-->
+<!--              </div>-->
+<!--              &lt;!&ndash;For mobile phone&ndash;&gt;-->
+<!--              <div class="block-one__page&#45;&#45;form&#45;&#45;city-phone phone">-->
+<!--                <img-->
+<!--                  class="search-img phone"-->
+<!--                  src="./images/seach.png"-->
+<!--                  alt="seach"-->
+<!--                />-->
+<!--                <input-->
+<!--                  class="block-one__page&#45;&#45;input&#45;&#45;city-phone phone"-->
+<!--                  type="text"-->
+<!--                  placeholder="Your destination or hotel name"-->
+<!--                />-->
+<!--              </div>-->
+<!--              <div class="block-one__page&#45;&#45;input&#45;&#45;data-block">-->
+<!--                <label-->
+<!--                  class="block-one__page&#45;&#45;underform block-one__page&#45;&#45;underform-data"-->
+<!--                  for="block_one_input_data">Check-in — Check-out-->
+<!--                </label>-->
+<!--                <input-->
+<!--                  id="block_one_input_data"-->
+<!--                  class="block-one__page&#45;&#45;input&#45;&#45;data-desktop desktop"-->
+<!--                  type="text"-->
+<!--                  placeholder="Tue 15 Sept — Sat 19 Sept"-->
+<!--                  onfocus="(this.type='date')"-->
+<!--                />-->
+<!--              </div>-->
+<!--              &lt;!&ndash;For mobile phone&ndash;&gt;-->
+<!--              <div class="block-one__page&#45;&#45;form&#45;&#45;data-phone phone">-->
+<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;data&#45;&#45;check phone">-->
+<!--                  <div class="block-one__page&#45;&#45;form&#45;&#45;data&#45;&#45;check-text phone">-->
+<!--                    Check-in-->
+<!--                  </div>-->
+<!--                  <input-->
+<!--                    class="block-one__page&#45;&#45;input&#45;&#45;data-phone phone"-->
+<!--                    type="text"-->
+<!--                    placeholder="Tue 15 Sept 2020"-->
+<!--                    onfocus="(this.type='date')"-->
+<!--                  />-->
+<!--                </div>-->
+<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;data&#45;&#45;check phone">-->
+<!--                  <div class="block-one__page&#45;&#45;form&#45;&#45;data&#45;&#45;check-text phone">-->
+<!--                    Check-out-->
+<!--                  </div>-->
+<!--                  <input-->
+<!--                    class="block-one__page&#45;&#45;input&#45;&#45;data-phone phone"-->
+<!--                    type="text"-->
+<!--                    placeholder="Sat 19 Sept 2020"-->
+<!--                  />-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <input-->
+<!--                class="block-one__page&#45;&#45;input&#45;&#45;nomer-desktop desktop"-->
+<!--                type="text"-->
+<!--                placeholder="2 Adults — 0 Children — 1 Room"-->
+<!--              />-->
+<!--              &lt;!&ndash;For mobile phone&ndash;&gt;-->
+<!--              <div class="block-one__page&#45;&#45;form&#45;&#45;nomer-phone phone">-->
+<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter phone">-->
+<!--                  <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter-text phone">-->
+<!--                    Adults-->
+<!--                  </div>-->
+<!--                  <input-->
+<!--                    class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter-input phone"-->
+<!--                    type="text"-->
+<!--                    placeholder="2"-->
+<!--                  />-->
+<!--                </div>-->
+<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;line phone">-->
+<!--                  <svg-->
+<!--                    width="1"-->
+<!--                    height="32"-->
+<!--                    viewBox="0 0 1 32"-->
+<!--                    fill="none"-->
+<!--                    xmlns="http://www.w3.org/2000/svg"-->
+<!--                  >-->
+<!--                    <path stroke="#BFBFBF" d="M.5 0v32" />-->
+<!--                  </svg>-->
+<!--                </div>-->
+<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter phone">-->
+<!--                  <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter-text phone">-->
+<!--                    Children-->
+<!--                  </div>-->
+<!--                  <input-->
+<!--                    class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter-input phone"-->
+<!--                    type="text"-->
+<!--                    placeholder="0"-->
+<!--                  />-->
+<!--                </div>-->
+<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;line phone">-->
+<!--                  <svg-->
+<!--                    width="1"-->
+<!--                    height="32"-->
+<!--                    viewBox="0 0 1 32"-->
+<!--                    fill="none"-->
+<!--                    xmlns="http://www.w3.org/2000/svg"-->
+<!--                  >-->
+<!--                    <path stroke="#BFBFBF" d="M.5 0v32" />-->
+<!--                  </svg>-->
+<!--                </div>-->
+<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter phone">-->
+<!--                  <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter-text phone">-->
+<!--                    Room-->
+<!--                  </div>-->
+<!--                  <input-->
+<!--                    class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter-input phone"-->
+<!--                    type="text"-->
+<!--                    placeholder="1"-->
+<!--                  />-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <button class="block-one__page&#45;&#45;form&#45;&#45;button">Search</button>-->
+<!--          </form>-->
+
+
+
+
+
           <div class="block-one__page--apps">
             <a href="#">
               <svg class="block-one__page--apps--googleplay">
