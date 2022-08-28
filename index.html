@@ -215,175 +215,135 @@
             <p>Discover stays</p>
             <p>to live, work or just relax</p>
           </div>
-
-
-
           <form class="block-one__page--form">
-            <div class="block-one__page__form--filters">
-              <div class="block-one__page__form__filters--city">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 0 0 1.437-3.87 5.946 5.946 0 1 0-5.947 5.947 5.92 5.92 0 0 0 3.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574Zm-5.489 0A4.111 4.111 0 0 1 1.83 5.946 4.111 4.111 0 0 1 5.946 1.83a4.111 4.111 0 0 1 4.117 4.116 4.111 4.111 0 0 1-4.117 4.117Z" fill="#BFBFBF"/>
-                </svg>
-                <label for="block_one_input_city">Your destination or hotel name</label>
-                <input id="block_one_input_city" type="text" placeholder="New York">
-              </div>
+            <div class="block-one__page--form--filters">
 
-              <div class="block-one__page__form__filters--data">
-                <label for="block_one_input_data">Check-in — Check-out</label>
-                <input id="block_one_input_data" type="text" placeholder="Tue 15 Sept 2020"
-                       onfocus="(this.type='date')">
-                <input type="text" placeholder="Sat 19 Sept 2020"
-                       onfocus="(this.type='date')">
+              <div class="block-one__page--input--city-block block-one__desktop">
+                <label
+                  class="block-one__page--underform"
+                  for="block_one_input_city"
+                >Your destination or hotel name</label
+                >
+                <input
+                  id="block_one_input_city"
+                  class="block-one__page--input--city-desktop block-one__desktop"
+                  type="text"
+                  placeholder="New York"
+                />
               </div>
-
-              <div class="block-one__page__form__filters--room">
-                <label for="block_one_input_adults">Adults</label>
-                <input id="block_one_input_adults" type="text" placeholder="2">
-                <label for="block_one_input_children">Children</label>
-                <input id="block_one_input_children" type="text" placeholder="0">
-                <label for="block_one_input_room">Rooms</label>
-                <input id="block_one_input_room" type="text" placeholder="1">
+              <!--For mobile phone-->
+              <div class="block-one__page--form--city-phone block-one__phone">
+                <div class="search-svg block-one__phone">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 0 0 1.437-3.87 5.946 5.946 0 1 0-5.947 5.947 5.92 5.92 0 0 0 3.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574Zm-5.489 0A4.111 4.111 0 0 1 1.83 5.946 4.111 4.111 0 0 1 5.946 1.83a4.111 4.111 0 0 1 4.117 4.116 4.111 4.111 0 0 1-4.117 4.117Z" fill="#BFBFBF"/>
+                  </svg>
+                </div>
+                <input
+                  class="block-one__page--input--city-phone block-one__phone"
+                  type="text"
+                  placeholder="Your destination or hotel name"
+                />
               </div>
-
+              <div class="block-one__page--input--data-block block-one__desktop">
+                <label
+                  class="block-one__page--underform block-one__page--underform-data"
+                  for="block_one_input_data">Check-in — Check-out
+                </label>
+                <input
+                  id="block_one_input_data"
+                  class="block-one__page--input--data-desktop block-one__desktop"
+                  type="text"
+                  placeholder="Tue 15 Sept — Sat 19 Sept"
+                  onfocus="(this.type='date')"
+                />
+              </div>
+              <!--For mobile phone-->
+              <div class="block-one__page--form--data-phone block-one__phone">
+                <div class="block-one__page--form--data--check block-one__phone">
+                  <div class="block-one__page--form--data--check-text block-one__phone">
+                    Check-in
+                  </div>
+                  <input
+                    class="block-one__page--input--data-phone block-one__phone"
+                    type="text"
+                    placeholder="Tue 15 Sept 2020"
+                    onfocus="(this.type='date')"
+                  />
+                </div>
+                <div class="block-one__page--form--data--check block-one__phone">
+                  <div class="block-one__page--form--data--check-text block-one__phone">
+                    Check-out
+                  </div>
+                  <input
+                    class="block-one__page--input--data-phone block-one__phone"
+                    type="text"
+                    placeholder="Sat 19 Sept 2020"
+                  />
+                </div>
+              </div>
+              <input
+                class="block-one__page--input--room-desktop block-one__desktop"
+                type="text"
+                placeholder="2 Adults — 0 Children — 1 Room"
+              />
+              <!--For mobile phone-->
+              <div class="block-one__page--form--room-phone block-one__phone">
+                <div class="block-one__page--form--room--filter block-one__phone">
+                  <div class="block-one__page--form--room--filter-text block-one__phone">
+                    Adults
+                  </div>
+                  <input
+                    class="block-one__page--form--room--filter-input block-one__phone"
+                    type="text"
+                    placeholder="2"
+                  />
+                </div>
+                <div class="block-one__page--form--room--line block-one__phone">
+                  <svg
+                    width="1"
+                    height="32"
+                    viewBox="0 0 1 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path stroke="#BFBFBF" d="M.5 0v32" />
+                  </svg>
+                </div>
+                <div class="block-one__page--form--room--filter block-one__phone">
+                  <div class="block-one__page--form--room--filter-text block-one__phone">
+                    Children
+                  </div>
+                  <input
+                    class="block-one__page--form--room--filter-input block-one__phone"
+                    type="text"
+                    placeholder="0"
+                  />
+                </div>
+                <div class="block-one__page--form--room--line block-one__phone">
+                  <svg
+                    width="1"
+                    height="32"
+                    viewBox="0 0 1 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path stroke="#BFBFBF" d="M.5 0v32" />
+                  </svg>
+                </div>
+                <div class="block-one__page--form--room--filter block-one__phone">
+                  <div class="block-one__page--form--room--filter-text block-one__phone">
+                    Room
+                  </div>
+                  <input
+                    class="block-one__page--form--room--filter-input block-one__phone"
+                    type="text"
+                    placeholder="1"
+                  />
+                </div>
+              </div>
             </div>
             <button class="block-one__page--form--button">Search</button>
           </form>
-
-
-
-<!--          <form class="block-one__page&#45;&#45;form">-->
-<!--            <div class="block-one__page&#45;&#45;form&#45;&#45;filters">-->
-<!--              <div class="block-one__page&#45;&#45;input&#45;&#45;city-block">-->
-<!--                <label-->
-<!--                  class="block-one__page&#45;&#45;underform"-->
-<!--                  for="block_one_input_city"-->
-<!--                >Your destination or hotel name</label-->
-<!--                >-->
-<!--                <input-->
-<!--                  id="block_one_input_city"-->
-<!--                  class="block-one__page&#45;&#45;input&#45;&#45;city-desktop desktop"-->
-<!--                  type="text"-->
-<!--                  placeholder="New York"-->
-<!--                />-->
-<!--              </div>-->
-<!--              &lt;!&ndash;For mobile phone&ndash;&gt;-->
-<!--              <div class="block-one__page&#45;&#45;form&#45;&#45;city-phone phone">-->
-<!--                <img-->
-<!--                  class="search-img phone"-->
-<!--                  src="./images/seach.png"-->
-<!--                  alt="seach"-->
-<!--                />-->
-<!--                <input-->
-<!--                  class="block-one__page&#45;&#45;input&#45;&#45;city-phone phone"-->
-<!--                  type="text"-->
-<!--                  placeholder="Your destination or hotel name"-->
-<!--                />-->
-<!--              </div>-->
-<!--              <div class="block-one__page&#45;&#45;input&#45;&#45;data-block">-->
-<!--                <label-->
-<!--                  class="block-one__page&#45;&#45;underform block-one__page&#45;&#45;underform-data"-->
-<!--                  for="block_one_input_data">Check-in — Check-out-->
-<!--                </label>-->
-<!--                <input-->
-<!--                  id="block_one_input_data"-->
-<!--                  class="block-one__page&#45;&#45;input&#45;&#45;data-desktop desktop"-->
-<!--                  type="text"-->
-<!--                  placeholder="Tue 15 Sept — Sat 19 Sept"-->
-<!--                  onfocus="(this.type='date')"-->
-<!--                />-->
-<!--              </div>-->
-<!--              &lt;!&ndash;For mobile phone&ndash;&gt;-->
-<!--              <div class="block-one__page&#45;&#45;form&#45;&#45;data-phone phone">-->
-<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;data&#45;&#45;check phone">-->
-<!--                  <div class="block-one__page&#45;&#45;form&#45;&#45;data&#45;&#45;check-text phone">-->
-<!--                    Check-in-->
-<!--                  </div>-->
-<!--                  <input-->
-<!--                    class="block-one__page&#45;&#45;input&#45;&#45;data-phone phone"-->
-<!--                    type="text"-->
-<!--                    placeholder="Tue 15 Sept 2020"-->
-<!--                    onfocus="(this.type='date')"-->
-<!--                  />-->
-<!--                </div>-->
-<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;data&#45;&#45;check phone">-->
-<!--                  <div class="block-one__page&#45;&#45;form&#45;&#45;data&#45;&#45;check-text phone">-->
-<!--                    Check-out-->
-<!--                  </div>-->
-<!--                  <input-->
-<!--                    class="block-one__page&#45;&#45;input&#45;&#45;data-phone phone"-->
-<!--                    type="text"-->
-<!--                    placeholder="Sat 19 Sept 2020"-->
-<!--                  />-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <input-->
-<!--                class="block-one__page&#45;&#45;input&#45;&#45;nomer-desktop desktop"-->
-<!--                type="text"-->
-<!--                placeholder="2 Adults — 0 Children — 1 Room"-->
-<!--              />-->
-<!--              &lt;!&ndash;For mobile phone&ndash;&gt;-->
-<!--              <div class="block-one__page&#45;&#45;form&#45;&#45;nomer-phone phone">-->
-<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter phone">-->
-<!--                  <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter-text phone">-->
-<!--                    Adults-->
-<!--                  </div>-->
-<!--                  <input-->
-<!--                    class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter-input phone"-->
-<!--                    type="text"-->
-<!--                    placeholder="2"-->
-<!--                  />-->
-<!--                </div>-->
-<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;line phone">-->
-<!--                  <svg-->
-<!--                    width="1"-->
-<!--                    height="32"-->
-<!--                    viewBox="0 0 1 32"-->
-<!--                    fill="none"-->
-<!--                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                  >-->
-<!--                    <path stroke="#BFBFBF" d="M.5 0v32" />-->
-<!--                  </svg>-->
-<!--                </div>-->
-<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter phone">-->
-<!--                  <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter-text phone">-->
-<!--                    Children-->
-<!--                  </div>-->
-<!--                  <input-->
-<!--                    class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter-input phone"-->
-<!--                    type="text"-->
-<!--                    placeholder="0"-->
-<!--                  />-->
-<!--                </div>-->
-<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;line phone">-->
-<!--                  <svg-->
-<!--                    width="1"-->
-<!--                    height="32"-->
-<!--                    viewBox="0 0 1 32"-->
-<!--                    fill="none"-->
-<!--                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                  >-->
-<!--                    <path stroke="#BFBFBF" d="M.5 0v32" />-->
-<!--                  </svg>-->
-<!--                </div>-->
-<!--                <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter phone">-->
-<!--                  <div class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter-text phone">-->
-<!--                    Room-->
-<!--                  </div>-->
-<!--                  <input-->
-<!--                    class="block-one__page&#45;&#45;form&#45;&#45;nomer&#45;&#45;filter-input phone"-->
-<!--                    type="text"-->
-<!--                    placeholder="1"-->
-<!--                  />-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <button class="block-one__page&#45;&#45;form&#45;&#45;button">Search</button>-->
-<!--          </form>-->
-
-
-
-
-
           <div class="block-one__page--apps">
             <a href="#">
               <svg class="block-one__page--apps--googleplay">
@@ -399,7 +359,6 @@
         </div>
       </div>
     </div>
-
     <!--Block 2-->
     <div class="container">
       <div class="block-two">
@@ -586,7 +545,6 @@
           </div>
           <figcaption class="block-four__content--figure--figcaption">Spain</figcaption>
         </figure>
-
         <figure class="block-four__content--figure desktop">
           <img class="block-four__content--figure--img desktop" src="././images/Norway.png" alt="Norway">
           <figcaption class="block-four__content--figure--figcaption desktop">Norway</figcaption>
@@ -596,7 +554,6 @@
           <figcaption class="block-four__content--figure--figcaption desktop">Island</figcaption>
         </figure>
     </section>
-
     <section class="block-four--circle desktop">
       <svg class="block-four__content--arrow desktop" width="21" height="9" viewBox="0 0 21 9" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="m1.176 1 8.212 6.159a2 2 0 0 0 2.4 0L20 1" stroke="#383838" stroke-width="2"/>
@@ -628,64 +585,10 @@
       </div>
     </section>
   </div>
-<!--  <div class="container">-->
-<!--    <header class="block-four&#45;&#45;header">The best destinations</header>-->
-<!--    <nav class="block-four&#45;&#45;nav">-->
-<!--        <div class="block-four&#45;&#45;nav&#45;&#45;item block-four&#45;&#45;nav&#45;&#45;item&#45;&#45;regions">Regions</div>-->
-<!--        <div class="block-four&#45;&#45;nav&#45;&#45;item block-four&#45;&#45;nav&#45;&#45;item&#45;&#45;cities">Cities</div>-->
-<!--        <div class="block-four&#45;&#45;nav&#45;&#45;item block-four&#45;&#45;nav&#45;&#45;item&#45;&#45;places">Places of interest</div>-->
-<!--    </nav>-->
-<!--    <section class="block-four&#45;&#45;sections">-->
-<!--      <figure>-->
-<!--        <img class="block-four&#45;&#45;sections-img" src="././images/Maldives.png" alt="Maldives">-->
-<!--        <figcaption class="block-four&#45;&#45;sections-caption">Maldives</figcaption>-->
-<!--      </figure>-->
-<!--      <figure>-->
-<!--        <img class="block-four&#45;&#45;sections-img" src="././images/Spain.png" alt="Spain">-->
-<!--        <figcaption class="block-four&#45;&#45;sections-caption">Spain</figcaption>-->
-<!--      </figure>-->
-<!--      <figure>-->
-<!--        <img class="block-four&#45;&#45;sections-img" src="././images/Norway.png" alt="Norway">-->
-<!--        <figcaption class="block-four&#45;&#45;sections-caption">Norway</figcaption>-->
-<!--      </figure>-->
-<!--      <figure>-->
-<!--        <img class="block-four&#45;&#45;sections-img" src="././images/island.png" alt="Island">-->
-<!--        <figcaption class="block-four&#45;&#45;sections-caption">Island</figcaption>-->
-<!--      </figure>-->
-<!--    </section>-->
-<!--&lt;!&ndash;    <button class="block-four&#45;&#45;button">Book now</button>&ndash;&gt;-->
-<!--    <div class="block-four&#45;&#45;circle circle">-->
-<!--      <svg class="block-four&#45;&#45;arrow" width="21" height="9" viewBox="0 0 21 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1.176 1 8.212 6.159a2 2 0 0 0 2.4 0L20 1" stroke="#383838" stroke-width="2"/>-->
-<!--      </svg>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--  <div class="container">-->
-<!--    <div class="sing-up">-->
-<!--      <div class="left">-->
-<!--        <svg class="sing-up__logotip" width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--          <circle cx="43" cy="43" r="43" fill="#fff"/>-->
-<!--          <path d="M46.652 55.748c0-2.056.511-4.03 1.473-5.79a54.137 54.137 0 0 0-2.782-1.472.362.362 0 0 1-.205-.338v-8.08a3.776 3.776 0 0 0 1.688-3.141v-8.378A7.55 7.55 0 0 0 39.276 21h-1.8a7.55 7.55 0 0 0-7.549 7.55v8.377c0 1.31.675 2.465 1.688 3.14v8.081a.38.38 0 0 1-.205.338c-1.155.562-6.75 3.386-11.937 7.651A4.04 4.04 0 0 0 18 59.277v5.739h32.979a10.52 10.52 0 0 1-.788-.726 12.01 12.01 0 0 1-3.54-8.542Z" fill="#3077C6"/><path d="M58.732 46.48c-5.114 0-9.267 4.154-9.267 9.268 0 5.115 4.153 9.268 9.267 9.268 5.115 0 9.268-4.153 9.268-9.268a9.266 9.266 0 0 0-9.268-9.267ZM64.154 57.1h-4.071v4.07h-2.7V57.1H53.31v-2.701h4.071v-4.071h2.7v4.071h4.072v2.7Z" fill="#3077C6"/>-->
-<!--        </svg>-->
-<!--        <div class="sing-up__content">-->
-<!--          <p class="sing-up__content&#45;&#45;text">Sign up and get 20% off your first booking</p>-->
-<!--          <button class="sing-up__content&#45;&#45;button">Sign up</button>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="right">-->
-<!--        <svg class="sing-up__close" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--          <path d="M26 1.486 24.514 0 13 11.514 1.486 0 0 1.486 11.514 13 0 24.514 1.486 26 13 14.486 24.514 26 26 24.514 14.486 13 26 1.486Z" fill="#BFBFBF"/>-->
-<!--        </svg>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-
-
   <!--Block 5-->
     <div class="container block-five__container">
       <div class="block-five">
         <header class="block-five__header">Guests reviews</header>
-
-
         <section class="block-five__img-section block-five__img--resort">
           <img class="block-five__img" src="images/resort.png" alt="Resort">
           <div class="block-five__price desktop">From 250 USD</div>
@@ -711,13 +614,10 @@
           <p class="block-five__caption--location-review block-five__caption--location-review--resort">	&#127482;&#127462; Ukraine</p>
           <p class="block-five__caption--text-review block-five__caption--text-review--resort">Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice. </p>
         </section>
-
-
         <section class="block-five__img-section block-five__img--hostel desktop">
           <img class="block-five__img desktop" src="././images/hostel.png" alt="Hostel">
           <div class="block-five__price desktop">From 40 USD</div>
         </section>
-
         <section class="block-five__caption block-five__caption--hostel desktop">
           <p class="block-five__caption--name block-five__caption--name--hostel desktop">King Kong Hostel</p>
           <p class="block-five__caption--location block-five__caption--location--hostel desktop">Rotterdam, Netherlands</p>
@@ -738,12 +638,10 @@
             <br>
             Most importantly, those who work here are kind and good-natured.</p>
         </section>
-
         <section class="block-five__img-section block-five__img--hotel desktop">
           <img class="block-five__img desktop" src="././images/hotel.png" alt="Hotel">
           <div class="block-five__price desktop">From 100 USD</div>
         </section>
-
         <section class="block-five__caption block-five__caption--hotel desktop">
           <p class="block-five__caption--name block-five__caption--name--hotel desktop">Rokoko Hotel</p>
           <p class="block-five__caption--location block-five__caption--location--hotel desktop">Ourika, Marocco</p>
@@ -763,87 +661,6 @@
 
       </div>
     </div>
-
-
-<!--  <div class="block-three__img block-three__img&#45;&#45;hotel">-->
-<!--    <img class="block-three__img" src="././images/Rectangle%2048.png" alt="Hotel">-->
-<!--  </div>-->
-<!--  <div class="block-three__caption block-three__caption&#45;&#45;hotel">-->
-<!--    Hotel Leopold-->
-<!--  </div>-->
-<!--  <div class="block-three__location block-three__location&#45;&#45;hotel">-->
-<!--    Saint Petersburg, Russia-->
-<!--  </div>-->
-<!--  <div class="block-three__img block-three__img&#45;&#45;appartment">-->
-<!--    <img class="block-three__img" src="././images/Rectangle%2049.png" alt="Appartment">-->
-<!--    <div class="circle phone">-->
-<!--      <svg-->
-<!--        class="arrow phone"-->
-<!--        width="9"-->
-<!--        height="21"-->
-<!--        viewBox="0 0 9 21"-->
-<!--        fill="none"-->
-<!--        xmlns="http://www.w3.org/2000/svg"-->
-<!--      >-->
-<!--        <path-->
-<!--          d="M.941 19.823 7.1 11.612a2 2 0 0 0 0-2.4L.941 1"-->
-<!--          stroke="#383838"-->
-<!--          stroke-width="2"-->
-<!--        />-->
-<!--      </svg>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--  <div class="block-three__caption block-three__caption&#45;&#45;appartment">-->
-<!--    Apartment Sunshine-->
-<!--  </div>-->
-<!--  <div class="block-three__location block-three__location&#45;&#45;appartment">-->
-<!--    Santa Cruz de Tenerife, Spain-->
-<!--  </div>-->
-<!--  <div class="block-three__img block-three__img&#45;&#45;villa desktop">-->
-<!--    <img src="././images/Rectangle%2050.png" alt="Villa">-->
-<!--  </div>-->
-<!--  <div class="block-three__caption block-three__caption&#45;&#45;villa desktop">-->
-<!--    Villa Kunerad-->
-<!--  </div>-->
-<!--  <div-->
-<!--    class="block-three__location block-three__location&#45;&#45;villa desktop"-->
-<!--  >-->
-<!--    Vysokie Tatry, Slowakia-->
-<!--  </div>-->
-<!--  <div class="block-three__img block-three__img&#45;&#45;hostel desktop">-->
-<!--    <img src="././images/Rectangle%2051.png" alt="Hostel">-->
-<!--    <div class="circle">-->
-<!--      <svg-->
-<!--        class="arrow"-->
-<!--        width="9"-->
-<!--        height="21"-->
-<!--        viewBox="0 0 9 21"-->
-<!--        fill="none"-->
-<!--        xmlns="http://www.w3.org/2000/svg"-->
-<!--      >-->
-<!--        <path-->
-<!--          d="M.941 19.823 7.1 11.612a2 2 0 0 0 0-2.4L.941 1"-->
-<!--          stroke="#383838"-->
-<!--          stroke-width="2"-->
-<!--        />-->
-<!--      </svg>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--  <div-->
-<!--    class="block-three__caption block-three__caption&#45;&#45;hostel desktop"-->
-<!--  >-->
-<!--    Hostel Friendship-->
-<!--  </div>-->
-<!--  <div-->
-<!--    class="block-three__location block-three__location&#45;&#45;hostel desktop"-->
-<!--  >-->
-<!--    Berlin, Germany-->
-<!--  </div>-->
-
-
-
-
-
     <!--Block 6-->
     <div class="block-six__background">
       <div class="container__block-six container">
@@ -880,6 +697,5 @@
         <footer class="block-six__footer">&copy; 2020 Triphouse, Inc. All rights reserved</footer>
       </div>
     </div>
-
   </body>
 </html>
