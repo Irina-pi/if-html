@@ -155,18 +155,19 @@ input {
   border: 3px solid #f5bd41;
   border-radius: 8px;
   margin: -3px;
-  text-align: center;
 }
 
 .block-one__page--input--data-desktop {
   width: 259px;
   font-weight: 400;
   font-size: 18px;
+  text-align: center;
   color: #383838;
 }
 
 .block-one__page--input--nomer-desktop {
   width: 305px;
+  margin-left: 3px;
   text-align: center;
   font-weight: 400;
   font-size: 18px;
