@@ -179,6 +179,10 @@ input {
   font-size: 18px;
   color: #383838;
   padding-left: 24px;
+  width: 99%;
+  height: 58px;
+  position: relative;
+  bottom: 20px;
 }
 
 .block-one__page--input--city-block {
@@ -201,7 +205,12 @@ input {
 .block-one__page--input--data-desktop {
   font-weight: 400;
   font-size: 18px;
+  text-align: center;
   color: #383838;
+  width: 99%;
+  height: 56px;
+  position: relative;
+  bottom: 20px
 }
 
 .block-one__page--input--room-desktop {
@@ -440,7 +449,7 @@ input {
 /*for Block 2 */
 .block-two {
   display: grid;
-  grid-template: auto / repeat(4, 296px);
+  grid-template: auto / repeat(4, 25%);
   margin: 120px 0;
   column-gap: 16px;
 }
@@ -878,7 +887,7 @@ input {
   background-color: var(--grey);
   height: 200px;
   padding-right: calc(var(--unit) * 3);
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .block-four__signup--logo {
@@ -904,11 +913,12 @@ input {
   height: 48px;
   border: 1px solid var(--blue);
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .block-four__signup--close {
-  margin-left: 599px;
   margin-top: 24px;
+  cursor: pointer;
 }
 
 .svg-close {
@@ -916,11 +926,15 @@ input {
   height: 26px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 700px) {
   /* For mobile phones Block 4: */
   [class*="col-"] {
     padding: 0;
     width: 100%;
+  }
+
+  .block-four {
+    height: 379px;
   }
 
   .phone {
@@ -963,6 +977,11 @@ input {
     gap: 16px;
   }
 
+  .block-four__content--figure-block {
+    height: 156px;
+    margin-bottom: 8px;
+  }
+
   .block-four__content--figure--img {
     margin-bottom: 8px;
     width: 156px;
@@ -982,7 +1001,7 @@ input {
     box-shadow: -1px 4px 4px 1px rgb(4 4 4 / 25%);
     cursor: pointer;
     position: relative;
-    bottom: 64%;
+    bottom: 90px;
     left: 89%;
     margin-bottom: 0;
   }
@@ -1002,6 +1021,14 @@ input {
     margin-left: -8px;
     gap: 16px;
     flex-direction: row-reverse;
+    justify-content: center;
+    position: relative;
+    top: 700px;
+  }
+
+  .block-four__signup--main-block {
+    flex-direction: row-reverse;
+    gap: 16px;
   }
 
   .block-four__signup--logo {
@@ -1032,7 +1059,7 @@ input {
 
   .block-four__signup--close {
     margin-top: 45px;
-    margin-left: 0;
+    margin-left: 17px;
   }
 
   .svg-close {
@@ -1083,6 +1110,18 @@ input {
   bottom: 51px;
 }
 
+.block-five__price--hotel {
+  height: 48px;
+  padding-top: 16px;
+  padding-left: 24px;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 18px;
+  background-color: rgba(56, 56, 56, 0.7);
+  position: relative;
+  bottom: 91px;
+}
+
 .block-five__img--resort {
   grid-area: 2 / 1 / 3 / 2;
 }
@@ -1095,6 +1134,26 @@ input {
 .block-five__img--hotel {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+}
+
+.block-five__circle {
+  background: #f3f3f4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: -1px 4px 4px 1px rgb(4 4 4 / 25%);
+  position: relative;
+  top: -224px;
+  left: 95%;
+  cursor: pointer;
+}
+
+.block-five__arrow {
+  width: 9px;
+  height: 21px;
+  position: relative;
+  top: 25%;
+  left: 40%;
 }
 
 .block-five__caption {
@@ -1215,7 +1274,7 @@ input {
   align-self: end;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 700px) {
   /* For mobile phones Block 5: */
   .desktop {
     display: none;
