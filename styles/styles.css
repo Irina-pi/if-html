@@ -1,14 +1,14 @@
 @import url("./fonts.css");
-@import url('https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css");
 
 :root {
-  --white: #FFFFFF;
+  --white: #ffffff;
   --black: #383838;
-  --general_blue: #10367C;
-  --blue: #3077C6;
-  --yellow: #F5BD41;
-  --grey: #EAF0F9;
-  --details-grey: #F3F3F4;
+  --general_blue: #10367c;
+  --blue: #3077c6;
+  --yellow: #f5bd41;
+  --grey: #eaf0f9;
+  --details-grey: #f3f3f4;
 
   --unit: 8px;
   --gap: calc(var(--unit) * 2);
@@ -210,7 +210,7 @@ input {
   width: 99%;
   height: 56px;
   position: relative;
-  bottom: 20px
+  bottom: 20px;
 }
 
 .block-one__page--input--room-desktop {
@@ -630,9 +630,8 @@ input {
 
 .block-three {
   display: grid;
-  grid-template: auto / repeat(4, 296px);
+  grid-template: auto / repeat(4, 25%);
   padding: 120px 0;
-  column-gap: 16px;
 }
 
 .block-three__header {
@@ -648,7 +647,7 @@ input {
 .block-three__img {
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 296px;
+  width: 100%;
   height: 296px;
   object-fit: contain;
 }
@@ -663,7 +662,7 @@ input {
 .block-three__location {
   font-weight: 400;
   font-size: 24px;
-  color: #BFBFBF;
+  color: #bfbfbf;
 }
 
 .block-three__img--hotel {
@@ -753,6 +752,7 @@ input {
   .block-three {
     grid-template: auto / repeat(2, 156px);
     padding: 40px 0 40px 0;
+    column-gap: 16px;
   }
 
   .block-three__header {
@@ -815,13 +815,11 @@ input {
   margin-bottom: 66px;
   width: 622px;
   height: 64px;
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
   border-radius: 8px;
 }
 
 .block-four__navigation--p {
-  /*padding-left: 52px;*/
-  /*padding-right: 17px;*/
   font-size: 24px;
   font-weight: 400;
   color: var(--black);
@@ -850,11 +848,10 @@ input {
   flex-direction: row;
   gap: var(--gap);
   margin-bottom: 49px;
-
 }
 
 .block-four__content--figure--img {
-  margin-bottom: calc(var(--unit) * 3);
+  margin-bottom: 19px;
   object-fit: contain;
 }
 
@@ -950,7 +947,7 @@ input {
 
   .block-four__navigation {
     margin-bottom: 24px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     height: 32px;
     border-radius: 0;
     gap: 16px;
@@ -963,8 +960,8 @@ input {
     cursor: pointer;
     width: 98px;
     height: 32px;
-    background-color: #FFFFFF;
-    border: 1px solid #F3F3F4;
+    background-color: #ffffff;
+    border: 1px solid #f3f3f4;
     border-radius: 4px;
   }
 
@@ -1023,7 +1020,7 @@ input {
     flex-direction: row-reverse;
     justify-content: center;
     position: relative;
-    top: 700px;
+    top: 877px;
   }
 
   .block-four__signup--main-block {
@@ -1222,7 +1219,7 @@ input {
 .block-five__caption--reviews {
   font-weight: 400;
   font-size: 14px;
-  color: #BFBFBF;
+  color: #bfbfbf;
 }
 
 .block-five__caption--logo {
@@ -1241,7 +1238,7 @@ input {
 .block-five__caption--logo--svg {
   width: 64px;
   height: 64px;
-  color: #BFBFBF;
+  color: #bfbfbf;
 }
 
 .block-five__caption--review {
@@ -1260,7 +1257,7 @@ input {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #BFBFBF;
+  color: #bfbfbf;
   align-self: end;
 }
 
@@ -1372,6 +1369,14 @@ input {
     font-size: 15px;
     line-height: 17px;
   }
+
+  .block-five__caption--svg-navigation {
+    margin: 32px 136px 40px 136px;
+  }
+
+  .white-block {
+    height: 107px;
+  }
 }
 
 /*Block 6*/
@@ -1409,6 +1414,7 @@ input {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  margin-top: 70px;
 }
 
 .block-six__content--header-about {
@@ -1469,10 +1475,6 @@ input {
 
 .block-six__content--text-faq {
   grid-area: 3 / 3 / 4 / 4;
-}
-
-.block-six__footer {
-  margin-top: calc(var(--gap) * 4);
 }
 
 @media only screen and (max-width: 700px) {
