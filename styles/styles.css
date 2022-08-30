@@ -605,13 +605,13 @@ input {
 /*for Block 3 */
 .block-three__background {
   background-color: var(--grey);
-  height: 828px;
 }
 
 .block-three {
   display: grid;
   grid-template: auto / repeat(4, 25%);
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 125px;
 
 }
 
