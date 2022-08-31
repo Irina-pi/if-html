@@ -191,7 +191,7 @@ input {
 /*for Block 2 */
 .block-two {
   display: grid;
-  grid-template: auto / repeat(4, 296px);
+  grid-template: auto / repeat(4, 25%);
   margin: 120px 0;
   column-gap: 16px;
 }
