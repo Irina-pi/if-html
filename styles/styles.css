@@ -38,6 +38,10 @@ input {
   background-size: cover;
 }
 
+.block-one {
+  min-height: 100vh;
+}
+
 .block-one__header {
   padding-top: 51px;
   padding-bottom: 198px;
