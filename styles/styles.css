@@ -842,9 +842,46 @@ input {
   margin-bottom: 49px;
 }
 
+.block-four__content--figure {
+  position: relative;
+}
+
 .block-four__content--figure--img {
   margin-bottom: 19px;
   object-fit: contain;
+  position: relative;
+  z-index: 7;
+}
+
+.block-four__content--figure--img:hover {
+  z-index: 4;
+}
+
+.block-four__content--figure--bg-img {
+  height: 295px;
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background: radial-gradient( rgba(56, 56, 56, 0.5), rgba(56, 56, 56, 0.4));
+}
+
+.block-four__content--figure--button {
+  width: 128px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--blue);
+  background-color: var(--white);
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 6;
+  transform: translate(-50% , -50%);
 }
 
 .block-four__content--figure--figcaption {
