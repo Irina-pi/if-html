@@ -1020,7 +1020,7 @@ input {
     flex-direction: row-reverse;
     justify-content: center;
     position: relative;
-    top: 877px;
+    top: 730px;
   }
 
   .block-four__signup--main-block {
@@ -1279,6 +1279,7 @@ input {
 
   .block-five__container {
     background-color: var(--grey);
+    margin-top: -147px;
   }
 
   .block-five {
