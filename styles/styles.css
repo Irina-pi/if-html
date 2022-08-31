@@ -1067,7 +1067,7 @@ input {
     flex-direction: row-reverse;
     justify-content: center;
     position: relative;
-    top: 730px;
+    top: 690px;
   }
 
   .block-four__signup--main-block {
@@ -1331,7 +1331,8 @@ input {
 
   .block-five {
     grid-template: auto / 328px;
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 0;
     column-gap: 0;
   }
 
@@ -1362,7 +1363,7 @@ input {
   .block-five__caption {
     height: 302px;
     grid-template: auto / 43px auto 72px;
-    padding: 12px 0 80px 0;
+    padding: 12px 0 0 0;
     gap: 0;
   }
 
@@ -1402,13 +1403,13 @@ input {
   .block-five__caption--review {
     font-size: 15px;
     margin-left: 13px;
+    margin-bottom: 4px;
     align-self: center;
   }
 
   .block-five__caption--location-review {
     font-size: 15px;
     line-height: 17px;
-    margin-top: 4px;
     margin-left: 13px;
     align-self: start;
   }
