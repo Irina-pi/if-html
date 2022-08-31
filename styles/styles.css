@@ -205,7 +205,7 @@ input {
   height: 40px;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 700px) {
   /* For mobile phones: */
   .phone {
     display: block;
@@ -285,10 +285,10 @@ input {
     height: 232px;
     flex-direction: column;
     justify-content: center;
+    row-gap: 8px;
     align-items: center;
     margin-bottom: 32px;
     background: #f5bd41;
-    border: 1px solid #f5bd41;
     border-radius: 0;
   }
 
@@ -297,7 +297,7 @@ input {
     display: flex;
     flex-direction: column;
     row-gap: 8px;
-    border-bottom: 8px solid #f5bd41;
+    border: none;
   }
 
   .block-one__page--form--city-phone {
@@ -389,7 +389,6 @@ input {
   .block-one__page--form--button {
     width: 312px;
     height: 48px;
-    border: 1px solid #f5bd41;
     border-radius: 4px;
     font-size: 19px;
   }
@@ -579,7 +578,7 @@ input {
 
 .block-three {
   display: grid;
-  grid-template: auto / repeat(4, 25%);
+  grid-template: auto / repeat(4, 1fr);
   padding: 120px 0;
   column-gap: 16px;
 }
@@ -686,8 +685,9 @@ input {
   border-radius: 50%;
   box-shadow: -1px 4px 4px 1px rgb(4 4 4 / 25%);
   position: relative;
-  top: 44%;
-  left: 94%;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
 }
 
 .arrow {
