@@ -67,9 +67,13 @@ input {
   min-height: 100vh;
 }
 
+.block-one {
+  min-height: 100vh;
+}
+
 .block-one__header {
   padding-top: 51px;
-  padding-bottom: 202px;
+  padding-bottom: 198px;
   display: flex;
   justify-content: space-between;
 }
@@ -175,6 +179,7 @@ input {
   background: var(--white);
   border-right: var(--blue);
   border-radius: 8px;
+
 }
 .block-one__page--form--filters {
   display: flex;
@@ -210,6 +215,13 @@ input {
 .block-one__page--underform-data {
   position: relative;
   left: -24px;
+}
+
+.block-one__page--input--data-block-desktop {
+  width: 26%;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  margin: -3px;
 }
 
 .block-one__page--input--data-desktop {
@@ -368,6 +380,7 @@ input {
     display: flex;
     background-color: var(--white);
     border-radius: 4px;
+    background-color: white;
   }
 
   .search-svg {
@@ -678,6 +691,7 @@ input {
 .block-three__location {
   font-weight: 400;
   font-size: 24px;
+  line-height: 1.3;
   color: #bfbfbf;
 }
 
