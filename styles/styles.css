@@ -69,7 +69,7 @@ input {
 
 .block-one__header {
   padding-top: 51px;
-  padding-bottom: 202px;
+  padding-bottom: 198px;
   display: flex;
   justify-content: space-between;
 }
@@ -461,7 +461,6 @@ input {
   display: grid;
   grid-template: auto / repeat(4, 25%);
   margin: 120px 0;
-  column-gap: 16px;
 }
 
 .block-two__header {
